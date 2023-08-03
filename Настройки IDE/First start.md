@@ -1,6 +1,6 @@
 ## Первый запуск
 
-Просто запустить `build` решения.
+Просто запустить `build` решения (`ctrl + shift + b`).
 
 ```PowerShell
 dotnet build .\game.sln
@@ -8,8 +8,8 @@ dotnet build .\game.sln
 
 ## Анализ (ошибки всего решения)
 
-![Alt text](first-start-analysis.png)
+![Alt text](../Resources/first-start-analysis.png)
 
 ## Настройка Code Clenup
 
-![Alt text](first-start-сode-сlenup.png)
+![Alt text](../Resources/first-start-сode-сlenup.png)
