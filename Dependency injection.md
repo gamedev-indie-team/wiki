@@ -12,11 +12,10 @@
 [Inject]
 private void DependencyInject()
 {
-
 }
 ```
 
-Необходимый `namespace` `using VContainer;`.
+Необходимый `namespace` `using VContainer;`
 
 Воспринимается как конструктор.
 
