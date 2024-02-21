@@ -9,13 +9,13 @@
 Компоненту на сцене добавить метод, с нужными параметрами:
 
 ```
-[Inject]
+[Inject, UsedImplicitly]
 private void DependencyInject()
 {
 }
 ```
 
-Необходимый `namespace` `using VContainer;`
+Необходимый `namespace`: `using VContainer;`, `JetBrains.Annotations;`
 
 Воспринимается как конструктор.
 
