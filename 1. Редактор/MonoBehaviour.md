@@ -8,7 +8,7 @@ public void Initialization()
 
 ## SerializeField в виде свойств а не полей
 
-Обязтельно описание
+Обязательно описание
 
 ```
 /// <summary>
