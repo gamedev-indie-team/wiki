@@ -36,16 +36,21 @@
 
 Включение / выключение тултипа, игроком, у интерактивных предметов, в зоне взаимодействия
 
-- включение / выключение `gameObject` из компонента `GameTooltipComponent`
+- проверить наличие `GameTooltipComponent` у `TargetComponent` и `PlayerTagComponent` у `OwnerComponent`
+- включение / выключение `GameObject` из компонента `GameTooltipComponent`
 
 ## PressInteractiveObjectSystem
 
 ### Фильтр
 
+#### Основной фильтр
+
 - `+ OwnerComponent`
 - `+ TargetComponent`
 - `+ EventInZoneInteractionTagComponent`
 - `- DeleteOnEndFrameComponent`
+
+#### Фильтр уже существующих нажатий
 
 - `+ OwnerComponent`
 - `+ TargetComponent`
@@ -54,8 +59,9 @@
 
 ### Описание
 
-Создаёт сущность взаимодействия с интерактивным предметом
+Создаёт сущность взаимодействия с интерактивным предметом.
 
+- проверяется наличие `InteractingWithObjectTagComponent` у `OwnerComponent`
 - проверяется наличие существующих нажатий по компоненту `EventPressInteractiveObjectTagComponent`
 - если нажатий нет, то создаётся сущность с `OwnerComponent`, `TargetComponent` и `EventPressInteractiveObjectTagComponent`
 - c сущности из `OwnerComponent` убирается компонент `InteractingWithObjectTagComponent`
@@ -71,9 +77,9 @@
 
 ### Описание
 
-Перемещение к цели на локации
+Перемещение к цели на локации.
 
-- проверяется наличие `TeleportTargetOnLocationComponent`
+- проверяется наличие `TeleportTargetOnLocationComponent` у `TargetComponent` и `RootTransformComponent` у `OwnerComponent`
 - берётся позиция из `RootTransformComponent` у `TargetComponent` устанавливается для `RootTransformComponent` у `OwnerComponent`
 
 ## TeleportToSceneSystem
@@ -87,9 +93,10 @@
 
 ### Описание
 
-Смена сцены, игроком
+Смена сцены, игроком.
 
-- проверяется наличие `TeleportToSceneComponent`
+- проверяется наличие `TeleportToSceneComponent` у `TargetComponent`
+  и `PlayerTagComponent` у `OwnerComponent`
 - берётся сцена из `TeleportToSceneComponent` и происходит её загрузка
 
 ## FastTravelPointTriggerEnterSystem
@@ -104,9 +111,8 @@
 
 ### Описание
 
-Вход в `FastTravelPointTrigger`
+Вход в `FastTravelPointTrigger`.
 
-- проверить наличие `FastTravelPointTagComponent`
 - создаётся ивент для изменения `ActiveComponent`
 - создаётся ивент для изменения `LastFastTravelPointComponent`
 - добавляет `DeleteOnEndFrameComponent`
@@ -123,9 +129,9 @@
 
 ### Описание
 
-Выход из `FastTravelPointTrigger`
+Выход из `FastTravelPointTrigger`.
 
-- проверить наличие `FastTravelPointTagComponent`
+- проверить наличие `FastTravelPointTagComponent` у `TargetComponent` и `PlayerTagComponent` у `OwnerComponent`
 - скрывает ui списка точек перемещения
 - добавляет `DeleteOnEndFrameComponent`
 
@@ -141,18 +147,22 @@
 
 Добавление `ActiveTagComponent` и включения `AlternativeVisualComponent` для тбп.
 
-- проверить наличие `FastTravelPointTagComponent`
+- проверить наличие `FastTravelPointTagComponent` у `TargetComponent`
 - добавляет `DeleteOnEndFrameComponent`
 - если нет `ActiveTagComponent`, создаётся ивент для смены `VisualComponent` и добавляется `ActiveTagComponent`
 
 ## UseFastTravelPointSystem
 
-### Фильтр
+### Фильтры
+
+#### Основной фильтр
 
 - `+ EventPressInteractiveObjectTagComponent`
 - `+ OwnerComponent`
 - `+ TargetComponent`
 - `- DeleteOnEndFrameComponent`
+
+#### Фильтр для объектов из пула
 
 - `+ ItemTagComponent`
 - `+ OwnerComponent`
@@ -163,7 +173,7 @@
 
 Система нажатия на тбп.
 
-- проверить наличие `FastTravelPointTagComponent` и `PlayerTagComponent`
+- проверить наличие `FastTravelPointTagComponent` у `TargetComponent` и `PlayerTagComponent` у `OwnerComponent`
 - если ui список точек перемещения выключен, то включается, иначе выключается и добавляется `DeleteOnEndFrameComponent`
 - респавн всех на точках спавна
 - создаётся ивент для изменения `LastFastTravelPointComponent` для `TargetComponent`
@@ -198,9 +208,9 @@
 
 ### Описание
 
-Система перехода на тбп.
+Выключение тултипа, у интерактивных объектов, которые используется только ОДИН раз.
 
-- проверить наличие `OneInteractionTagComponent` и `GameTooltipComponent`
+- проверить наличие `OneInteractionTagComponent` и `GameTooltipComponent` у `TargetComponent`
 - включает `GameObject` из `GameTooltipComponent`
 
 ## CreateEventChangeViewAfterInteractionSystem
@@ -216,7 +226,7 @@
 
 Добавление события смены визуального представления у `TargetComponent`, после взаимодействия.
 
-- проверить наличие `NotAllowChangeViewTagComponent`
+- проверить наличие `NotAllowChangeViewTagComponent` у `TargetComponent`
 - создаётся ивент для смены `VisualComponent`
 
 ## RemoveInteractivityWithOneInteractionSystem
@@ -230,7 +240,7 @@
 
 ### Описание
 
-Удаление интерактивности у предметов (после взаимодействия) с `OneInteractionTagComponent`
+Удаление интерактивности у предметов (после взаимодействия) с `OneInteractionTagComponent`.
 
 - проверить наличие `OneInteractionTagComponent` и отсутствие `DeleteOnEndFrameComponent` у `TargetComponent`
 - добавляет `DeleteOnEndFrameComponent` к `TargetComponent`
