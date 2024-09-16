@@ -9,11 +9,11 @@
 
 ### Фильтр
 
--   `+ EventTagComponent`
--   `+ EventModeComponent`
--   `+ TargetComponent`
--   `+ AttackTagComponent`
--   `- DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
+-   `+` `TargetComponent`
+-   `+` `AttackTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -29,11 +29,11 @@
 
 ### Фильтр
 
--   `+ EventTagComponent`
--   `+ EventModeComponent`
--   `+ TargetComponent`
--   `+ HitTagComponent`
--   `- DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
+-   `+` `TargetComponent`
+-   `+` `HitTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
