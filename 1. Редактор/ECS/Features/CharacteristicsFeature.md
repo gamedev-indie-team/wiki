@@ -13,10 +13,10 @@
 
 ### Фильтр
 
--   `+ EventTagComponent`
--   `+ TargetComponent`
--   `+ HealthComponent`
--   `- DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `HealthComponent`
+-   `-` `DeleteOnEndFrameComponent`
 -   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
@@ -34,10 +34,10 @@
 
 ### Фильтр
 
--   `+ EventTagComponent`
--   `+ TargetComponent`
--   `+ MaxHealthComponent`
--   `- DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `MaxHealthComponent`
+-   `-` `DeleteOnEndFrameComponent`
 -   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
@@ -55,10 +55,10 @@
 
 ### Фильтр
 
--   `+ EventTagComponent`
--   `+ TargetComponent`
--   `+ BalanceComponent`
--   `- DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `BalanceComponent`
+-   `-` `DeleteOnEndFrameComponent`
 -   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
@@ -76,10 +76,10 @@
 
 ### Фильтр
 
--   `+ EventTagComponent`
--   `+ TargetComponent`
--   `+ MaxBalanceComponent`
--   `- DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `MaxBalanceComponent`
+-   `-` `DeleteOnEndFrameComponent`
 -   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
@@ -97,10 +97,10 @@
 
 ### Фильтр
 
--   `+ EventTagComponent`
--   `+ TargetComponent`
--   `+ AttackSpeedComponent`
--   `- DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `AttackSpeedComponent`
+-   `-` `DeleteOnEndFrameComponent`
 -   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
@@ -117,10 +117,10 @@
 
 ### Фильтр
 
--   `+ EventTagComponent`
--   `+ TargetComponent`
--   `+ CriticalDamageComponent`
--   `- DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `CriticalDamageComponent`
+-   `-` `DeleteOnEndFrameComponent`
 -   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
