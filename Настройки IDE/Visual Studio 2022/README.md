@@ -10,7 +10,7 @@
 
 ## Первый запуск
 
--   [настроить Code cleanup][1]
+-   [настроить Code cleanup][2]
 
 -   запустить `build` решения (`ctrl + shift + b`)
     ```PowerShell
