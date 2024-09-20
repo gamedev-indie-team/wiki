@@ -11,7 +11,3 @@ dotnet build .\game.sln
 ## Анализ (ошибки всего решения)
 
 ![Alt text](../../Resources/first-start-analysis.png)
-
-## Настройка Code Clenup
-
-![Alt text](../../Resources/first-start-сode-сlenup.png)
