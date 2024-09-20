@@ -1,3 +1,5 @@
+> сперва нужно обновить студию до последней версии
+
 ## Первый запуск
 
 Просто запустить `build` решения (`ctrl + shift + b`).
@@ -8,8 +10,8 @@ dotnet build .\game.sln
 
 ## Анализ (ошибки всего решения)
 
-![Alt text](../Resources/first-start-analysis.png)
+![Alt text](../../Resources/first-start-analysis.png)
 
 ## Настройка Code Clenup
 
-![Alt text](../Resources/first-start-сode-сlenup.png)
+![Alt text](../../Resources/first-start-сode-сlenup.png)
