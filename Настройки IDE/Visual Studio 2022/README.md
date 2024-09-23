@@ -4,19 +4,30 @@
 
 ## Подключение visual studio 2022 в unity
 
--   в `Preferences` > `External Tools` выбрать `visual studio`
--   нажать кнопку `Regenerate projects files`
+1.  в `Preferences` > `External Tools` выбрать `visual studio`
+2.  нажать кнопку `Regenerate projects files`
 
 ![image][1]
 
-## Первый запуск
+3.  запуск `.sln` через выбранный редактор (приоритетный запуск, т.к. голый запуск может терять контент или `NuGet`)
 
--   [настроить Code cleanup][2]
+![image][2]
 
--   запустить `build` решения (`ctrl + shift + b`)
-    ```PowerShell
-    dotnet build .\game.sln
-    ```
+## Первый запуск visual studio
+
+1.  [настроить Code cleanup][3]
+
+2.  этот пункт можно сделать 2 путями:
+
+    1. восстановление `NuGet`-пакетов
+
+        ![image][4]
+
+    2. запустить `build` решения (`ctrl + shift + b`), создаться папка obj в корне, можно удалить
+
+        ```PowerShell
+        dotnet build .\game.sln
+        ```
 
 ## Анализ кода
 
@@ -26,4 +37,6 @@
 
 [0]: ../../README.md
 [1]: ../../Resources/visual-studio-unity-add.jpg
-[2]: ./0.%20Code%20cleanup.md
+[2]: ../../Resources/visual-studio-unity-open-sln.jpg
+[3]: ./0.%20Code%20cleanup.md
+[4]: ../../Resources/visual-studio-restore-nuget.png
