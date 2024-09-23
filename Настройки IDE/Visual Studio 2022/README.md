@@ -4,7 +4,8 @@
 
 ## Подключение visual studio 2022 в unity
 
-в `Preferences` > `External Tools` выбрать `visual studio`
+-   в `Preferences` > `External Tools` выбрать `visual studio`
+-   нажать кнопку `Regenerate projects files`
 
 ![image][1]
 
