@@ -17,11 +17,12 @@
 
 1.  [настроить Code cleanup (форматирование и исправление)][3]
 2.  [настроить Item Template (шаблоны для файлов)][4]
-3.  установка зависимостей. Этот пункт можно сделать 2 путями:
+3.  [настроить Code Snippets (шаблоны для кода)][5]
+4.  установка зависимостей. Этот пункт можно сделать 2 путями:
 
     1. восстановление `NuGet`-пакетов
 
-        ![image][5]
+        ![image][6]
 
     2. запустить `build` решения (`ctrl + shift + b`), создаться папка obj в корне, можно удалить
 
@@ -33,12 +34,13 @@
 
 Можно запускать как для всего решения, так и для проекта, удобно смотреть пропущенные `warning`
 
-![image][6]
+![image][7]
 
 [0]: ../../README.md
 [1]: ../../Resources/first-start-unity-external-tools.jpg
 [2]: ../../Resources/first-start-unity-open-sln.jpg
 [3]: ./0.%20Code%20cleanup.md
 [4]: ./1.%20Item%20Template.md
-[5]: ../../Resources/visual-studio-restore-nuget.png
-[6]: ../../Resources/first-start-analysis.png
+[5]: ./2.%20Code%20Snippets.md
+[6]: ../../Resources/visual-studio-restore-nuget.png
+[7]: ../../Resources/first-start-analysis.png
