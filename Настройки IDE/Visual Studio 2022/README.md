@@ -17,7 +17,7 @@
 
 1.  [настроить Code cleanup][3]
 
-2.  этот пункт можно сделать 2 путями:
+2.  установка зависимостей. Этот пункт можно сделать 2 путями:
 
     1. восстановление `NuGet`-пакетов
 
@@ -36,7 +36,7 @@
 ![image](../../Resources/first-start-analysis.png)
 
 [0]: ../../README.md
-[1]: ../../Resources/visual-studio-unity-add.jpg
-[2]: ../../Resources/visual-studio-unity-open-sln.jpg
+[1]: ../../Resources/first-start-unity-external-tools.jpg
+[2]: ../../Resources/first-start-unity-open-sln.jpg
 [3]: ./0.%20Code%20cleanup.md
 [4]: ../../Resources/visual-studio-restore-nuget.png
