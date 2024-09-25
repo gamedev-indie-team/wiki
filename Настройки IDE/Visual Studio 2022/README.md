@@ -15,13 +15,13 @@
 
 ## Первый запуск visual studio
 
-1.  [настроить Code cleanup][3]
-
-2.  установка зависимостей. Этот пункт можно сделать 2 путями:
+1.  [настроить Code cleanup (форматирование и исправление)][3]
+2.  [настроить Item Template (шаблоны для файлов)][4]
+3.  установка зависимостей. Этот пункт можно сделать 2 путями:
 
     1. восстановление `NuGet`-пакетов
 
-        ![image][4]
+        ![image][5]
 
     2. запустить `build` решения (`ctrl + shift + b`), создаться папка obj в корне, можно удалить
 
@@ -33,10 +33,12 @@
 
 Можно запускать как для всего решения, так и для проекта, удобно смотреть пропущенные `warning`
 
-![image](../../Resources/first-start-analysis.png)
+![image][6]
 
 [0]: ../../README.md
 [1]: ../../Resources/first-start-unity-external-tools.jpg
 [2]: ../../Resources/first-start-unity-open-sln.jpg
 [3]: ./0.%20Code%20cleanup.md
-[4]: ../../Resources/visual-studio-restore-nuget.png
+[4]: ./1.%20Item%20Template.md
+[5]: ../../Resources/visual-studio-restore-nuget.png
+[6]: ../../Resources/first-start-analysis.png
