@@ -35,11 +35,17 @@
         dotnet build .\game.sln
         ```
 
+6.  включение проверки орфографии
+
+    > Edit > Advanced > Toggle Spell Checker
+
+    ![image][8]
+
 ## Анализ кода
 
 Можно запускать как для всего решения, так и для проекта, удобно смотреть пропущенные `warning`
 
-![image][8]
+![image][9]
 
 [0]: ../../README.md
 [1]: ../../Resources/first-start-unity-external-tools.jpg
@@ -49,4 +55,5 @@
 [5]: ./2.%20Code%20Snippets.md
 [6]: ../../Resources/first-start-sln-add-editorconfig.png
 [7]: ../../Resources/visual-studio-restore-nuget.png
-[8]: ../../Resources/first-start-analysis.png
+[8]: ../../Resources/first-start-toggle-spell-checker.jpg
+[9]: ../../Resources/first-start-analysis.png
