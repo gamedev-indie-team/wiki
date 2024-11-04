@@ -19,7 +19,7 @@
 
 ### Описание
 
-Если `EcsLinkPool` не `null` в `PooledGameObjectComponent`, тогда вызывается `Release`
+Если `EcsLinkPool` не `null` в `PooledGameObjectComponent`, тогда вызывается `Release`  
 Удаляется `DeleteOnEndFrameType.Frame`
 
 ## ChangeEnableViewSystem
@@ -107,6 +107,6 @@
 
 ### Описание
 
-Если `DeleteOnEndFrame` равен `DeleteOnEndFrameType.Frame` то
-Если есть `SnapshotEntityPool` то сущность из этого компонента и удаляем из мира
+Если `DeleteOnEndFrame` равен `DeleteOnEndFrameType.Frame` то  
+Если есть `SnapshotEntityPool` то сущность из этого компонента и удаляем из мира  
 Если есть `RootTransform` то удаляем объект с помощью `UnityEngine.Object.Destroy`, иначе с помощью `World.DelEntity`
