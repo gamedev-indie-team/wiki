@@ -1,19 +1,11 @@
 # Дополнительные функции для Ecs world
 
-## Проверка жива ли сущность
-
-Метод возвращает true, если сущность жива в мире world. Использованы методы: EcsWorld.GetEntitiesCount, EcsWorld.GetRawEntities и EcsWorld.GetRawEntityOffset.
-
-```
-world.IsEntityAlive(entity)
-```
-
 ## Копирование пулов в другой мир
 
 Метод копирует все пулы из srcWorld в dstWorld. Добавление пула в мир происходит с помощью метода EcsWorld.GetPool. Если пул уже существует в dstWorld он будет пропущен.
 
 ```
-dstWorld.CopyPool(srcWorld)
+dstWorld.CopyPools(srcWorld)
 ```
 
 ## Копирование сущности в другой мир
