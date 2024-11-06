@@ -15,7 +15,7 @@ private void DependencyInject()
 }
 ```
 
-Необходимый `namespace`: `using VContainer;`, `JetBrains.Annotations;`
+Необходимые `namespace`: `VContainer;`, `JetBrains.Annotations;`
 
 Воспринимается как конструктор.
 

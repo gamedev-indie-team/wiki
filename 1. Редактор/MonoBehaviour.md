@@ -19,7 +19,7 @@ public void Initialization()
 
 ## Для ссылочных полей дополнительные атрибуты
 
-Необходимый `namespace` `using NaughtyAttributes;`
+Необходимый `namespace` `NaughtyAttributes;`
 
 ```
 Required("Required PropName")
