@@ -27,13 +27,13 @@
 
     1. восстановление `NuGet`-пакетов
 
-        ![image][7]
+       ![image][7]
 
     2. запустить `build` решения (`ctrl + shift + b`), создаться папка obj в корне, можно удалить
 
-        ```PowerShell
-        dotnet build .\game.sln
-        ```
+       ```PowerShell
+       dotnet build .\game.sln
+       ```
 
 6.  включение проверки орфографии
 
@@ -41,11 +41,20 @@
 
     ![image][8]
 
-## Анализ кода
+## Опционально
+
+### Анализ кода
 
 Можно запускать как для всего решения, так и для проекта, удобно смотреть пропущенные `warning`
 
 ![image][9]
+
+### Обозреватель решения
+
+Отслеживать активный элемент
+`Tools` > `Options` > `Project and Solutions` > `General` установить `Track Active Item in Solution Explorer`
+
+![image][10]
 
 [0]: ../../README.md
 [1]: ../../Resources/first-start-unity-external-tools.jpg
@@ -57,3 +66,4 @@
 [7]: ../../Resources/visual-studio-restore-nuget.png
 [8]: ../../Resources/first-start-toggle-spell-checker.jpg
 [9]: ../../Resources/first-start-analysis.png
+[10]: ../../Resources/track-active-item-explorer-solution.jpg
