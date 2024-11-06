@@ -51,8 +51,8 @@
 
 ### Обозреватель решения
 
-Отслеживать активный элемент
-`Tools` > `Options` > `Project and Solutions` > `General` установить `Track Active Item in Solution Explorer`
+> Отслеживать активный элемент
+> `Tools` > `Options` > `Project and Solutions` > `General` установить `Track Active Item in Solution Explorer`
 
 ![image][10]
 
