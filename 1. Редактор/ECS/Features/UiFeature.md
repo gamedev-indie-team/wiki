@@ -144,5 +144,5 @@
 
 ### Описание
 
-Если у сущности из `Target` есть `FastTravelPointTag`, то к ивент сущности добавляем `DeleteOnEndFrameType`
+Если у сущности из `Target` есть `FastTravelPointTag`, то к ивент сущности добавляем `DeleteOnEndFrameType`  
 Если `FastTravelPointUiListController` неактивен и мод из `EventModeComponent` равен `Set`, то делаем его активным, иначе делаем неактивным
