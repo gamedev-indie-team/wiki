@@ -6,6 +6,7 @@
 -   [ChangeMaxBalanceSystem](#ChangeMaxBalanceSystem)
 -   [ChangeSpeedAttackSystem](#ChangeSpeedAttackSystem)
 -   [ChangeCriticalDamageSystem](#ChangeCriticalDamageSystem)
+-   [ChangeVelocitySystem](#ChangeVelocitySystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764572814519301&cot=14)
 
@@ -14,17 +15,16 @@
 ### Фильтр
 
 -   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
 -   `+` `TargetComponent`
 -   `+` `HealthComponent`
 -   `-` `DeleteOnEndFrameComponent`
--   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
 ### Описание
 
-Изменение параметра здоровья.  
-Работает с `EcsEventMode.Set` и `EcsEventMode.Add` (по умолчанию, если нет `EventModeComponent`).
+Изменение параметра здоровья.
 
 -   обновление значения параметра, в зависимости от `EcsEventMode`
 -   ограничение значения `HealthComponent`: `[0, HealthComponent]`, если есть `MaxHealthComponent` (на `Target`) то `[0, MaxHealthComponent]`
@@ -35,17 +35,16 @@
 ### Фильтр
 
 -   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
 -   `+` `TargetComponent`
 -   `+` `MaxHealthComponent`
 -   `-` `DeleteOnEndFrameComponent`
--   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
 ### Описание
 
-Изменение параметра максимального здоровья.  
-Работает с `EcsEventMode.Set` и `EcsEventMode.Add` (по умолчанию, если нет `EventModeComponent`).
+Изменение параметра максимального здоровья.
 
 -   обновление значения параметра, в зависимости от `EcsEventMode`
 -   ограничение значения `MaxHealthComponent`: `[0, MaxHealthComponent]`
@@ -56,17 +55,16 @@
 ### Фильтр
 
 -   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
 -   `+` `TargetComponent`
 -   `+` `BalanceComponent`
 -   `-` `DeleteOnEndFrameComponent`
--   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
 ### Описание
 
-Изменение параметра максимального баланса.  
-Работает с `EcsEventMode.Set` и `EcsEventMode.Add` (по умолчанию, если нет `EventModeComponent`).
+Изменение параметра максимального баланса.
 
 -   обновление значения параметра, в зависимости от `EcsEventMode`
 -   ограничение значения `BalanceComponent`: `[0, BalanceComponent]`, если есть `MaxBalanceComponent` (на `Target`) то `[0, MaxBalanceComponent]`
@@ -77,17 +75,16 @@
 ### Фильтр
 
 -   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
 -   `+` `TargetComponent`
 -   `+` `MaxBalanceComponent`
 -   `-` `DeleteOnEndFrameComponent`
--   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
 ### Описание
 
-Изменение параметра максимального здоровья.  
-Работает с `EcsEventMode.Set` и `EcsEventMode.Add` (по умолчанию, если нет `EventModeComponent`).
+Изменение параметра максимального баланса.
 
 -   обновление значения параметра, в зависимости от `EcsEventMode`
 -   ограничение значения `MaxBalanceComponent`: `[0, MaxBalanceComponent]`
@@ -98,17 +95,16 @@
 ### Фильтр
 
 -   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
 -   `+` `TargetComponent`
 -   `+` `AttackSpeedComponent`
 -   `-` `DeleteOnEndFrameComponent`
--   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
 ### Описание
 
-Изменение параметра скорости атаки.  
-Работает с `EcsEventMode.Set` и `EcsEventMode.Add` (по умолчанию, если нет `EventModeComponent`).
+Изменение параметра скорости атаки.
 
 -   обновление значения параметра, в зависимости от `EcsEventMode`
 -   ограничение значения `AttackSpeedComponent`: `[1, AttackSpeedComponent]`
@@ -118,18 +114,36 @@
 ### Фильтр
 
 -   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
 -   `+` `TargetComponent`
 -   `+` `CriticalDamageComponent`
 -   `-` `DeleteOnEndFrameComponent`
--   опционально `EventModeComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
 ### Описание
 
-Изменение параметра критической атаки атаки.  
-Работает с `EcsEventMode.Set` и `EcsEventMode.Add` (по умолчанию, если нет `EventModeComponent`).
+Изменение параметра критической атаки.
 
 -   обновление значения параметра, в зависимости от `EcsEventMode`
 -   ограничение значения `CriticalDamageComponent.Chance`: `[0, 1]`
 -   ограничение значения `CriticalDamageComponent.Factor`: `[0, CriticalDamageComponent.Factor]`
+
+## ChangeVelocitySystem
+
+### Фильтр
+
+-   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
+-   `+` `TargetComponent`
+-   `+` `VelocityComponent`
+-   `-` `DeleteOnEndFrameComponent`
+
+Удаляется в `DeleteOnEndFrameType.FixedFrame`
+
+### Описание
+
+Изменение параметра скорости сущности.
+
+-   обновление значения параметра, в зависимости от `EcsEventMode`
+-   ограничение значения `VelocityComponent` (X, Y): `[0, value]`
