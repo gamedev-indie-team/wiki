@@ -36,4 +36,4 @@
 
 ### Описание
 
-// TODO: @chudov-a
+// TODO: @AnatoliyCh
