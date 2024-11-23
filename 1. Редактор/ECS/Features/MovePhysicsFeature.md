@@ -1,12 +1,12 @@
 ## Системы
 
-- [GroundTriggerEnterSystem](#GroundTriggerEnterSystem)
-- [GroundTriggerExitSystem](#GroundTriggerExitSystem)
-- [MoveRigidbodySystem](#MoveRigidbodySystem)
-- [JumpSystem](#JumpSystem)
-- [MaxVelocitySystem](#MaxVelocitySystem)
-- [FallingSystem](#FallingSystem)
-- [CheckFallingSystem](#CheckFallingSystem)
+-   [GroundTriggerEnterSystem](#GroundTriggerEnterSystem)
+-   [GroundTriggerExitSystem](#GroundTriggerExitSystem)
+-   [MoveRigidbodySystem](#MoveRigidbodySystem)
+-   [JumpSystem](#JumpSystem)
+-   [MaxVelocitySystem](#MaxVelocitySystem)
+-   [FallingSystem](#FallingSystem)
+-   [CheckFallingSystem](#CheckFallingSystem)
 
 [ССЫЛКА В МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764607092447009&cot=10)
 
@@ -14,10 +14,10 @@
 
 ### Фильтр
 
-- `+` `EventTriggerEnterTagComponent`
-- `+` `OwnerComponent`
-- `+` `GroundTriggerTagComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventTriggerEnterTagComponent`
+-   `+` `OwnerComponent`
+-   `+` `GroundTriggerTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
@@ -30,10 +30,10 @@
 
 ### Фильтр
 
-- `+` `EventTriggerEnterTagComponent`
-- `+` `OwnerComponent`
-- `+` `GroundTriggerTagComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventTriggerEnterTagComponent`
+-   `+` `OwnerComponent`
+-   `+` `GroundTriggerTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
@@ -45,11 +45,11 @@
 
 ### Фильтр
 
-- `+` `RigidbodyComponent`
-- `+` `VelocityComponent`
-- `+` `DirectionMoveComponent`
-- `-` `RbStaticTagComponent`
-- `-` `RbNotSimulatedTagComponent`
+-   `+` `RigidbodyComponent`
+-   `+` `VelocityComponent`
+-   `+` `DirectionMoveComponent`
+-   `-` `RbStaticTagComponent`
+-   `-` `RbNotSimulatedTagComponent`
 
 ### Описание
 
@@ -60,10 +60,10 @@
 
 ### Фильтр
 
-- `+` `RootTransformComponent`
-- `+` `VelocityComponent`
-- `+` `DirectionMoveComponent`
-- `-` `RigidbodyComponent`
+-   `+` `RootTransformComponent`
+-   `+` `VelocityComponent`
+-   `+` `DirectionMoveComponent`
+-   `-` `RigidbodyComponent`
 
 ### Описание
 
@@ -74,8 +74,8 @@
 
 ### Фильтр
 
-- `+` `JumpedTagComponent`
-- `+` `RigidbodyComponent`
+-   `+` `JumpedTagComponent`
+-   `+` `RigidbodyComponent`
 
 ### Описание
 
@@ -86,10 +86,10 @@
 
 ### Фильтр
 
-- `+` `RigidbodyComponent`
-- `-` `EventChangeRigidBodyTagComponent`
-- `-` `RbStaticTagComponent`
-- `-` `RbNotSimulatedTagComponent`
+-   `+` `RigidbodyComponent`
+-   `-` `EventChangeRigidBodyTagComponent`
+-   `-` `RbStaticTagComponent`
+-   `-` `RbNotSimulatedTagComponent`
 
 ### Описание
 
@@ -99,11 +99,11 @@
 
 ### Фильтр
 
-- `+` `RigidbodyComponent`
-- `+` `GravityScaleComponent`
-- `+` `FallingGravityScaleComponent`
-- `-` `RbStaticTagComponent`
-- `-` `RbNotSimulatedTagComponent`
+-   `+` `RigidbodyComponent`
+-   `+` `GravityScaleComponent`
+-   `+` `FallingGravityScaleComponent`
+-   `-` `RbStaticTagComponent`
+-   `-` `RbNotSimulatedTagComponent`
 
 ### Описание
 
@@ -113,9 +113,9 @@
 
 ### Фильтр
 
-- `+` `RigidbodyComponent`
-- `-` `RbStaticTagComponent`
-- `-` `RbNotSimulatedTagComponent`
+-   `+` `RigidbodyComponent`
+-   `-` `RbStaticTagComponent`
+-   `-` `RbNotSimulatedTagComponent`
 
 ### Описание
 
