@@ -1,7 +1,7 @@
 ## Системы
 
-- [AttackTriggerEnterSystem](#AttackTriggerEnterSystem)
-- [CreateEventPreparationDamageSystem](#CreateEventPreparationDamageSystem)
+-   [AttackTriggerEnterSystem](#AttackTriggerEnterSystem)
+-   [CreateEventPreparationDamageSystem](#CreateEventPreparationDamageSystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764607958335220&cot=10)
 
@@ -9,10 +9,10 @@
 
 ### Фильтр
 
-- `+` `EventTriggerEnterTagComponent`
-- `+` `AttackTriggerTagComponent`
-- `+` `TargetComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventTriggerEnterTagComponent`
+-   `+` `AttackTriggerTagComponent`
+-   `+` `TargetComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -25,12 +25,12 @@
 
 ### Фильтр
 
-- `+` `EventTriggerEnterTagComponent`
-- `+` `AttackTriggerTagComponent`
-- `+` `TargetComponent`
-- `-` `DeleteOnEndFrameComponent`
-- `-` `ImmortalTagComponent`
-- `-` `BlockTagComponent`
+-   `+` `EventTriggerEnterTagComponent`
+-   `+` `AttackTriggerTagComponent`
+-   `+` `TargetComponent`
+-   `-` `DeleteOnEndFrameComponent`
+-   `-` `ImmortalTagComponent`
+-   `-` `BlockTagComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 

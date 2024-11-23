@@ -1,7 +1,7 @@
 ## Системы
 
-- [ChangeMoveDirectionSystem](#ChangeMoveDirectionSystem)
-- [CheckDirectionHorizontalSystem](#CheckDirectionHorizontalSystem)
+-   [ChangeMoveDirectionSystem](#ChangeMoveDirectionSystem)
+-   [CheckDirectionHorizontalSystem](#CheckDirectionHorizontalSystem)
 
 [ССЫЛКА В МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764607093380246&cot=10)
 
@@ -9,10 +9,10 @@
 
 ### Фильтр
 
-- `+` `EventChangeDirectionTagComponent`
-- `+` `DirectionMoveComponent`
-- `+` `TargetComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventChangeDirectionTagComponent`
+-   `+` `DirectionMoveComponent`
+-   `+` `TargetComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -24,8 +24,8 @@
 
 ### Фильтр
 
-- `+` `DirectionMoveComponent`
-- `+` `DirectionViewComponent`
+-   `+` `DirectionMoveComponent`
+-   `+` `DirectionViewComponent`
 
 ### Описание
 
