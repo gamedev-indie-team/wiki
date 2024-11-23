@@ -18,7 +18,7 @@
 
 ### Описание
 
-Если в сущности из `Target` есть `BlockTag`, то добавляем его на сущность `event`
+Если в сущности из `Target` есть `BlockTag`, то добавляем его на сущность `event`  
 Если в сущности из `Target` есть `ImmortalTag`, то добавляем его на сущность `event`
 
 ## CreateEventPreparationDamageSystem
@@ -28,12 +28,15 @@
 -   `+` `EventTriggerEnterTagComponent`
 -   `+` `AttackTriggerTagComponent`
 -   `+` `TargetComponent`
--   `-` `DeleteOnEndFrameComponent`
--   `-` `ImmortalTagComponent`
 -   `-` `BlockTagComponent`
+-   `-` `ImmortalTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
 ### Описание
 
-// TODO: @AnatoliyCh
+-   носитель урона (`НУ`) - это либо сам `event` либо `owner` события (тот кто ударил)
+-   создается копия карты урона `НУ` по характеристикам цели (если есть баланс - то можно нанести урон по балансу и т.д.)
+-   из созданной карты урона создается НОВЫЙ УРОН из урона `НУ` и новой карты урона (по сути копия урона `НУ` без параметров по которым нельзя нанести урон)
+-   создается событие `EventPreparationDamageEntity` с: уроном, картой урона, target owner (опционально)
