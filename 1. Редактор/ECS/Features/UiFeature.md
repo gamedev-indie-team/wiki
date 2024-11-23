@@ -1,14 +1,14 @@
 ## Системы
 
-- [ChangeMaxValueHealthBarSystem](#ChangeMaxValueHealthBarSystem)
-- [ChangeValueHealthBarSystem](#ChangeValueHealthBarSystem)
-- [AddItemInventorySystem](#AddItemInventorySystem)
-- [ChangeGoldSystem](#ChangeGoldSystem)
-- [ChangeCountItemSystem](#ChangeCountItemSystem)
-- [DeleteItemSystem](#DeleteItemSystem)
-- [DeleteEventAddItemTagSystem](#DeleteEventAddItemTagSystem)
-- [DeleteEventChangeCountItemTagSystem](#DeleteEventChangeCountItemTagSystem)
-- [FastTravelPointListChangeViewSystem](#FastTravelPointListChangeViewSystem)
+-   [ChangeMaxValueHealthBarSystem](#ChangeMaxValueHealthBarSystem)
+-   [ChangeValueHealthBarSystem](#ChangeValueHealthBarSystem)
+-   [AddItemInventorySystem](#AddItemInventorySystem)
+-   [ChangeGoldSystem](#ChangeGoldSystem)
+-   [ChangeCountItemSystem](#ChangeCountItemSystem)
+-   [DeleteItemSystem](#DeleteItemSystem)
+-   [DeleteEventAddItemTagSystem](#DeleteEventAddItemTagSystem)
+-   [DeleteEventChangeCountItemTagSystem](#DeleteEventChangeCountItemTagSystem)
+-   [FastTravelPointListChangeViewSystem](#FastTravelPointListChangeViewSystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764605916522272&cot=10)
 
@@ -16,10 +16,10 @@
 
 ### Фильтр
 
-- `+` `EventTagComponent`
-- `+` `TargetComponent`
-- `+` `MaxHealthComponent`
-- `+` `DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `MaxHealthComponent`
+-   `+` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
@@ -31,10 +31,10 @@
 
 ### Фильтр
 
-- `+` `EventTagComponent`
-- `+` `TargetComponent`
-- `+` `HealthComponent`
-- `+` `DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `HealthComponent`
+-   `+` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
@@ -46,11 +46,11 @@
 
 ### Фильтр
 
-- `+` `EventAddItemTagComponent`
-- `+` `TargetComponent`
-- `+` `OwnerComponent`
-- `+` `ItemTypeComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventAddItemTagComponent`
+-   `+` `TargetComponent`
+-   `+` `OwnerComponent`
+-   `+` `ItemTypeComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
@@ -62,10 +62,10 @@
 
 ### Фильтр
 
-- `+` `EventTagComponent`
-- `+` `OwnerComponent`
-- `+` `GoldComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `OwnerComponent`
+-   `+` `GoldComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
@@ -77,12 +77,12 @@
 
 ### Фильтр
 
-- `+` `EventChangeCountItemTagComponent`
-- `+` `OwnerComponent`
-- `+` `TargetComponent`
-- `+` `CountComponent`
-- `+` `ItemTypeComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventChangeCountItemTagComponent`
+-   `+` `OwnerComponent`
+-   `+` `TargetComponent`
+-   `+` `CountComponent`
+-   `+` `ItemTypeComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
@@ -94,9 +94,9 @@
 
 ### Фильтр
 
-- `+` `EventDeleteItemTagComponent`
-- `+` `TargetComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventDeleteItemTagComponent`
+-   `+` `TargetComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
@@ -108,8 +108,8 @@
 
 ### Фильтр
 
-- `+` `EventAddItemTagComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventAddItemTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
@@ -121,8 +121,8 @@
 
 ### Фильтр
 
-- `+` `EventChangeCountItemTagComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventChangeCountItemTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 
@@ -134,11 +134,11 @@
 
 ### Фильтр
 
-- `+` `EventTagComponent`
-- `+` `EventModeComponent`
-- `+` `TargetComponent`
-- `+` `FastTravelPointTagComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
+-   `+` `TargetComponent`
+-   `+` `FastTravelPointTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.FixedFrame`
 

@@ -1,23 +1,23 @@
 ## Системы
 
-- [FollowTriggerEnterSystem](#FollowTriggerEnterSystem)
-- [FollowTriggerExitSystem](#FollowTriggerExitSystem)
-- [PatrolSystem](#PatrolSystem)
-- [MoveToTargetPointSystem](#MoveToTargetPointSystem)
-- [AttackSystem](#AttackSystem)
-- [BlockSystem](#BlockSystem)
-- [DisableBlockSystem](#DisableBlockSystem)
-- [DeleteBattleTagSystem](#DeleteBattleTagSystem)
+-   [FollowTriggerEnterSystem](#FollowTriggerEnterSystem)
+-   [FollowTriggerExitSystem](#FollowTriggerExitSystem)
+-   [PatrolSystem](#PatrolSystem)
+-   [MoveToTargetPointSystem](#MoveToTargetPointSystem)
+-   [AttackSystem](#AttackSystem)
+-   [BlockSystem](#BlockSystem)
+-   [DisableBlockSystem](#DisableBlockSystem)
+-   [DeleteBattleTagSystem](#DeleteBattleTagSystem)
 
 ## FollowTriggerEnterSystem
 
 ### Фильтр
 
-- `+` `EventTriggerEnterTagComponent`
-- `+` `FollowTriggerTagComponent`
-- `+` `OwnerComponent`
-- `+` `TargetComponent`
-- `+` `DeleteOnEndFrameComponent`
+-   `+` `EventTriggerEnterTagComponent`
+-   `+` `FollowTriggerTagComponent`
+-   `+` `OwnerComponent`
+-   `+` `TargetComponent`
+-   `+` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -31,10 +31,10 @@
 
 ### Фильтр
 
-- `+` `EventTriggerExitTagComponent`
-- `+` `FollowTriggerTagComponent`
-- `+` `OwnerComponent`
-- `+` `DeleteOnEndFrameComponent`
+-   `+` `EventTriggerExitTagComponent`
+-   `+` `FollowTriggerTagComponent`
+-   `+` `OwnerComponent`
+-   `+` `DeleteOnEndFrameComponent`
 
 ### Описание
 
@@ -46,11 +46,11 @@
 
 ### Фильтр
 
-- `+` `WayPointTriggerTagComponent`
-- `+` `EventTriggerEnterTagComponent`
-- `+` `TargetComponent`
-- `+` `CurrentTargetPointComponent`
-- `+` `DeleteOnEndFrameComponent`
+-   `+` `WayPointTriggerTagComponent`
+-   `+` `EventTriggerEnterTagComponent`
+-   `+` `TargetComponent`
+-   `+` `CurrentTargetPointComponent`
+-   `+` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -64,14 +64,14 @@
 
 ### Фильтр
 
-- `+` `AiTagComponent`
-- `+` `CurrentTargetPointComponent`
-- `+` `RootTransformComponent`
-- `+` `VelocityComponent`
-- `-` `AttackTagComponent`
-- `-` `BlockTagComponent`
-- `-` `DirectionMoveComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `AiTagComponent`
+-   `+` `CurrentTargetPointComponent`
+-   `+` `RootTransformComponent`
+-   `+` `VelocityComponent`
+-   `-` `AttackTagComponent`
+-   `-` `BlockTagComponent`
+-   `-` `DirectionMoveComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 ### Описание
 
@@ -82,11 +82,11 @@
 
 ### Фильтр
 
-- `+` `EventTagComponent`
-- `+` `TargetComponent`
-- `+` `OwnerComponent`
-- `+` `AttackZoneTagComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `OwnerComponent`
+-   `+` `AttackZoneTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 ### Описание
 
@@ -97,17 +97,17 @@
 
 ### Фильтр
 
-- `+` `AttackStartTagComponent`
-- `+` `RootTransformComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `AttackStartTagComponent`
+-   `+` `RootTransformComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 ### Фильтр событий
 
-- `+` `EventTagComponent`
-- `+` `TargetComponent`
-- `+` `OwnerComponent`
-- `+` `AttackZoneTagComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `OwnerComponent`
+-   `+` `AttackZoneTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 ### Описание
 
@@ -119,10 +119,10 @@
 
 ### Фильтр
 
-- `+` `EventTagComponent`
-- `+` `TimerComponent`
-- `+` `BlockTagComponent`
-- `+` `TargetComponent`
+-   `+` `EventTagComponent`
+-   `+` `TimerComponent`
+-   `+` `BlockTagComponent`
+-   `+` `TargetComponent`
 
 ### Описание
 
@@ -132,18 +132,18 @@
 
 ### Фильтр
 
-- `+` `EventTagComponent`
-- `+` `TargetComponent`
-- `+` `OwnerComponent`
-- `+` `AttackZoneTagComponent`
-- `+` `DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `TargetComponent`
+-   `+` `OwnerComponent`
+-   `+` `AttackZoneTagComponent`
+-   `+` `DeleteOnEndFrameComponent`
 
 ### Фильтр таймера
 
-- `+` `EventTagComponent`
-- `+` `TimerComponent`
-- `+` `BlockTagComponent`
-- `+` `TargetComponent`
+-   `+` `EventTagComponent`
+-   `+` `TimerComponent`
+-   `+` `BlockTagComponent`
+-   `+` `TargetComponent`
 
 ### Описание
 

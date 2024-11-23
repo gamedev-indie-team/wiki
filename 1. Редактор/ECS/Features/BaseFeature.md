@@ -1,12 +1,12 @@
 ## Системы
 
-- [ReleaseObjectSystem](#ReleaseObjectSystem)
-- [ChangeEnableViewSystem](#ChangeEnableViewSystem)
-- [RemoveTimerSystem](#RemoveTimerSystem)
-- [UpdateTimerSystem](#UpdateTimerSystem)
-- [UpdateFrameTimerSystem](#UpdateFrameTimerSystem)
-- [SwitchVisualAndAlternateVisualSystem](#SwitchVisualAndAlternateVisualSystem)
-- [DeleteOnEndFrameSystem](#DeleteOnEndFrameSystem)
+-   [ReleaseObjectSystem](#ReleaseObjectSystem)
+-   [ChangeEnableViewSystem](#ChangeEnableViewSystem)
+-   [RemoveTimerSystem](#RemoveTimerSystem)
+-   [UpdateTimerSystem](#UpdateTimerSystem)
+-   [UpdateFrameTimerSystem](#UpdateFrameTimerSystem)
+-   [SwitchVisualAndAlternateVisualSystem](#SwitchVisualAndAlternateVisualSystem)
+-   [DeleteOnEndFrameSystem](#DeleteOnEndFrameSystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764605611778059&cot=10)
 
@@ -14,8 +14,8 @@
 
 ### Фильтр
 
-- `+` `DeleteOnEndFrameComponent`
-- `+` `PooledGameObjectComponent`
+-   `+` `DeleteOnEndFrameComponent`
+-   `+` `PooledGameObjectComponent`
 
 ### Описание
 
@@ -26,9 +26,9 @@
 
 ### Фильтр
 
-- `+` `EventChangeEnableViewTagComponent`
-- `+` `ViewEntityComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventChangeEnableViewTagComponent`
+-   `+` `ViewEntityComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -40,11 +40,11 @@
 
 ### Фильтр
 
-- `+` `EventTagComponent`
-- `+` `EventModeComponent`
-- `+` `TargetComponent`
-- `+` `TimerComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
+-   `+` `TargetComponent`
+-   `+` `TimerComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -57,8 +57,8 @@
 
 ### Фильтр
 
-- `+` `TimerComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `TimerComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -72,8 +72,8 @@
 
 ### Фильтр
 
-- `+` `FrameTimerComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `FrameTimerComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -85,9 +85,9 @@
 
 ### Фильтр
 
-- `+` `EventChangeVisualTagComponent`
-- `+` `TargetComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventChangeVisualTagComponent`
+-   `+` `TargetComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -101,7 +101,7 @@
 
 ### Фильтр
 
-- `+` `DeleteOnEndFrameComponent`
+-   `+` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
