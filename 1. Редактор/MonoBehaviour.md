@@ -12,7 +12,7 @@ public void Initialization()
 
 ```
 /// <summary>
-///     .
+/// {DESC}.
 /// </summary>
 [field: SerializeField] public Type PropName { get; private set; }
 ```
