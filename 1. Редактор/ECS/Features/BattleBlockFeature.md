@@ -10,10 +10,10 @@
 
 ### Фильтр
 
-- `+` `BlockTagComponent`
-- `-` `EventTagComponent`
-- `-` `OwnerComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `BlockTagComponent`
+-   `-` `EventTagComponent`
+-   `-` `OwnerComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 ### Описание
 
@@ -23,11 +23,11 @@
 
 ### Фильтр
 
-- `+` `EventTagComponent`
-- `+` `EventModeComponent`
-- `+` `TargetComponent`
-- `+` `BlockTagComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
+-   `+` `TargetComponent`
+-   `+` `BlockTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -39,11 +39,11 @@
 
 ### Фильтр
 
-- `+` `EventTriggerEnterTagComponent`
-- `+` `AttackTriggerTagComponent`
-- `+` `TargetComponent`
-- `+` `OwnerComponent`
-- `+` `BlockTagComponent`
+-   `+` `EventTriggerEnterTagComponent`
+-   `+` `AttackTriggerTagComponent`
+-   `+` `TargetComponent`
+-   `+` `OwnerComponent`
+-   `+` `BlockTagComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
