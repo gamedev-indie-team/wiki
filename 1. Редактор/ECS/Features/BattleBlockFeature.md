@@ -1,8 +1,8 @@
 ## Системы
 
-- [RemoveBlockTagByOtherStateSystem](#RemoveBlockTagByOtherStateSystem)
-- [ChangeBlockTagByEventSystem](#ChangeBlockTagByEventSystem)
-- [BehaviourByBlockSystem](#BehaviourByBlockSystem)
+-   [RemoveBlockTagByOtherStateSystem](#RemoveBlockTagByOtherStateSystem)
+-   [ChangeBlockTagByEventSystem](#ChangeBlockTagByEventSystem)
+-   [BehaviourByBlockSystem](#BehaviourByBlockSystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764608546301999&cot=10)
 
