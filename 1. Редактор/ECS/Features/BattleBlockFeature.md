@@ -2,9 +2,9 @@
 
 -   [RemoveBlockTagByOtherStateSystem](#RemoveBlockTagByOtherStateSystem)
 -   [ChangeBlockTagByEventSystem](#ChangeBlockTagByEventSystem)
--   [RemoveEventAttackTriggerEnterByBlock](#RemoveEventAttackTriggerEnterByBlock)
+-   [BehaviourByBlockSystem](#BehaviourByBlockSystem)
 
-[МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764608066429220&cot=10)
+[МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764608546301999&cot=10)
 
 ## RemoveBlockTagByOtherStateSystem
 
@@ -33,21 +33,20 @@
 
 ### Описание
 
-Безопасное удаление и добавление `BlockTagComponent` на сущность
+- Добавлять `BlockTag` если `target` не имеет `BlockTag` и `EventMode` равен `Add`, иначе удалять.
 
-## RemoveEventAttackTriggerEnterByBlock
+## BehaviourByBlockSystem
 
 ### Фильтр
 
 -   `+` `EventTriggerEnterTagComponent`
 -   `+` `AttackTriggerTagComponent`
 -   `+` `TargetComponent`
+-   `+` `OwnerComponent`
 -   `+` `BlockTagComponent`
--   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
 ### Описание
 
--   удаляет событие входа в триггер урона при блоке целью
--   отталкивает ударившего
+- Создаём `event` для добавления силы для отталкивания ударившего.
