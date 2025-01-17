@@ -1,10 +1,10 @@
 ## Системы
 
-- [PeriodDamageSystem](#PeriodDamageSystem)
-- [AddingCriticalDamageSystem](#AddingCriticalDamageSystem)
-- [DamageSplittingSystem](#DamageSplittingSystem)
-- [DamageCalculationSystem](#DamageCalculationSystem)
-- [ApplyDamageSystem](#ApplyDamageSystem)
+-   [PeriodDamageSystem](#PeriodDamageSystem)
+-   [AddingCriticalDamageSystem](#AddingCriticalDamageSystem)
+-   [DamageSplittingSystem](#DamageSplittingSystem)
+-   [DamageCalculationSystem](#DamageCalculationSystem)
+-   [ApplyDamageSystem](#ApplyDamageSystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764613604360834&cot=10)
 
@@ -12,11 +12,11 @@
 
 ### Фильтр
 
-- `+` `EventPreparationDamageTagComponent`
-- `+` `TargetComponent`
-- `+` `DamageMapComponent`
-- `+` `DamageComponent`
-- `-` `TimerComponent`
+-   `+` `EventPreparationDamageTagComponent`
+-   `+` `TargetComponent`
+-   `+` `DamageMapComponent`
+-   `+` `DamageComponent`
+-   `-` `TimerComponent`
 
 ### Описание
 
@@ -26,12 +26,12 @@
 
 ### Фильтр
 
-- `+` `EventPreparationDamageTagComponent`
-- `+` `TargetComponent`
-- `+` `DamageMapComponent`
-- `+` `DamageComponent`
-- `+` `OwnerComponent`
-- `-` `TimerComponent`
+-   `+` `EventPreparationDamageTagComponent`
+-   `+` `TargetComponent`
+-   `+` `DamageMapComponent`
+-   `+` `DamageComponent`
+-   `+` `OwnerComponent`
+-   `-` `TimerComponent`
 
 ### Описание
 
@@ -42,11 +42,11 @@
 
 ### Фильтр
 
-- `+` `EventPreparationDamageTagComponent`
-- `+` `TargetComponent`
-- `+` `DamageMapComponent`
-- `+` `DamageComponent`
-- `-` `TimerComponent`
+-   `+` `EventPreparationDamageTagComponent`
+-   `+` `TargetComponent`
+-   `+` `DamageMapComponent`
+-   `+` `DamageComponent`
+-   `-` `TimerComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -58,11 +58,11 @@
 
 ### Фильтр
 
-- `+` `TargetComponent`
-- `+` `DamageTypeComponent`
-- `+` `DamageVolumeComponent`
-- `+` `TargetDamageComponent`
-- `+` `ResistVolumeComponent`
+-   `+` `TargetComponent`
+-   `+` `DamageTypeComponent`
+-   `+` `DamageVolumeComponent`
+-   `+` `TargetDamageComponent`
+-   `+` `ResistVolumeComponent`
 
 ### Описание
 
@@ -72,10 +72,10 @@
 
 ### Фильтр
 
-- `+` `TargetComponent`
-- `+` `DamageVolumeComponent`
-- `+` `TargetDamageComponent`
-- `-` `DeleteOnEndFrameComponent`
+-   `+` `TargetComponent`
+-   `+` `DamageVolumeComponent`
+-   `+` `TargetDamageComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 ### Описание
 
