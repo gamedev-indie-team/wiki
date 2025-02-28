@@ -1,12 +1,12 @@
 ## Системы
 
--   [ReleaseObjectSystem](#ReleaseObjectSystem)
--   [ChangeEnableViewSystem](#ChangeEnableViewSystem)
--   [RemoveTimerSystem](#RemoveTimerSystem)
--   [UpdateTimerSystem](#UpdateTimerSystem)
--   [UpdateFrameTimerSystem](#UpdateFrameTimerSystem)
--   [SwitchVisualAndAlternateVisualSystem](#SwitchVisualAndAlternateVisualSystem)
--   [DeleteOnEndFrameSystem](#DeleteOnEndFrameSystem)
+- [ReleaseObjectSystem](#ReleaseObjectSystem)
+- [ChangeEnableViewSystem](#ChangeEnableViewSystem)
+- [RemoveTimerSystem](#RemoveTimerSystem)
+- [UpdateTimerSystem](#UpdateTimerSystem)
+- [UpdateFrameTimerSystem](#UpdateFrameTimerSystem)
+- [SwitchVisualAndAlternateVisualSystem](#SwitchVisualAndAlternateVisualSystem)
+- [DeleteOnEndFrameSystem](#DeleteOnEndFrameSystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764605611778059&cot=10)
 
@@ -14,8 +14,8 @@
 
 ### Фильтр
 
--   `+` `DeleteOnEndFrameComponent`
--   `+` `PooledGameObjectComponent`
+- `+` `DeleteOnEndFrameComponent`
+- `+` `PooledGameObjectComponent`
 
 ### Описание
 
@@ -26,9 +26,9 @@
 
 ### Фильтр
 
--   `+` `EventChangeEnableViewTagComponent`
--   `+` `ViewEntityComponent`
--   `-` `DeleteOnEndFrameComponent`
+- `+` `EventChangeEnableViewTagComponent`
+- `+` `ViewEntityComponent`
+- `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -40,11 +40,11 @@
 
 ### Фильтр
 
--   `+` `EventTagComponent`
--   `+` `EventModeComponent`
--   `+` `TargetComponent`
--   `+` `TimerComponent`
--   `-` `DeleteOnEndFrameComponent`
+- `+` `EventTagComponent`
+- `+` `EventModeComponent`
+- `+` `TargetComponent`
+- `+` `TimerComponent`
+- `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -57,8 +57,8 @@
 
 ### Фильтр
 
--   `+` `TimerComponent`
--   `-` `DeleteOnEndFrameComponent`
+- `+` `TimerComponent`
+- `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -72,8 +72,8 @@
 
 ### Фильтр
 
--   `+` `FrameTimerComponent`
--   `-` `DeleteOnEndFrameComponent`
+- `+` `FrameTimerComponent`
+- `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
@@ -81,27 +81,31 @@
 
 Если `FrameTimer` не равен 0 `FrameTimer` уменьшается на 1, иначе добавляется `DeleteOnEndFrameType.Frame`
 
-## SwitchVisualAndAlternateVisualSystem
+## ChangeSwitchableObjectSystem
 
 ### Фильтр
 
--   `+` `EventChangeVisualTagComponent`
--   `+` `TargetComponent`
--   `-` `DeleteOnEndFrameComponent`
+- `+` `EventTagComponent`
+- `+` `TargetComponent`
+- `+` `SwitchableObjectComponent`
+- `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
 ### Описание
 
-`View` меняется `Active` на противоположный от текущего
-`ViewEndState` меняется `Active` на противоположный от текущего
+Если у сущности из `TargetComponent` нет `SwitchObject` или есть `SwitchObjectDisabledTag`, то выходим из системы
 Добавляется `DeleteOnEndFrameType.Frame`
+Если у сущности из `TargetComponent` в `SwitchableObjectComponent` стоит флаг `SwitchOnce`, то добавляем на эту сущность `SwitchObjectDisabledTag`
+Если у `event` есть `DisabledObjectTag` , то добавляем на сущность из `TargetComponent` компонент `DisabledObjectTag`  
+Сменить `MainState` на противоположный
+Вызвать `SetActive` для каждого объекта из `SwitchableObjectComponent`
 
 ## DeleteOnEndFrameSystem
 
 ### Фильтр
 
--   `+` `DeleteOnEndFrameComponent`
+- `+` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
