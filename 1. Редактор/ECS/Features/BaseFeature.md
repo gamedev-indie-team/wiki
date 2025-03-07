@@ -5,7 +5,7 @@
 -   [RemoveTimerSystem](#RemoveTimerSystem)
 -   [UpdateTimerSystem](#UpdateTimerSystem)
 -   [UpdateFrameTimerSystem](#UpdateFrameTimerSystem)
--   [SwitchVisualAndAlternateVisualSystem](#SwitchVisualAndAlternateVisualSystem)
+-   [ChangeSwitchableObjectSystem](#ChangeSwitchableObjectSystem)
 -   [DeleteOnEndFrameSystem](#DeleteOnEndFrameSystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764605611778059&cot=10)

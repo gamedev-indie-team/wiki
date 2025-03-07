@@ -10,8 +10,6 @@
 
 #### Системы взаимодействия c тбп
 
--   [FastTravelPointTriggerEnterSystem](#FastTravelPointTriggerEnterSystem)
--   [FastTravelPointTriggerExitSystem](#FastTravelPointTriggerExitSystem)
 -   [FastTravelPointActiveSystem](#FastTravelPointActiveSystem)
 -   [UseFastTravelPointSystem](#UseFastTravelPointSystem)
 -   [TransitionFastTravelPointSystem](#TransitionFastTravelPointSystem)
@@ -19,7 +17,7 @@
 #### Конечная обработка взаимодействия
 
 -   [DisableGameTooltipWithOneInteractionSystem](#DisableGameTooltipWithOneInteractionSystem)
--   [CreateEventChangeViewAfterInteractionSystem](#CreateEventChangeViewAfterInteractionSystem)
+-   [PostProcessPressableObjectSystem](#PostProcessPressableObjectSystem)
 -   [RemoveInteractivityWithOneInteractionSystem](#RemoveInteractivityWithOneInteractionSystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764590634744836&cot=14)
@@ -99,42 +97,6 @@
     и `PlayerTagComponent` у `OwnerComponent`
 -   берётся сцена из `TeleportToSceneComponent` и происходит её загрузка
 
-## FastTravelPointTriggerEnterSystem
-
-### Фильтр
-
--   `+` `OwnerComponent`
--   `+` `TargetComponent`
--   `+` `EventTriggerEnterTagComponent`
--   `+` `FastTravelPointTriggerTagComponent`
--   `-` `DeleteOnEndFrameComponent`
-
-### Описание
-
-Вход в `FastTravelPointTrigger`.
-
--   создаётся ивент для изменения `ActiveComponent`
--   создаётся ивент для изменения `LastFastTravelPointComponent`
--   добавляет `DeleteOnEndFrameComponent`
-
-## FastTravelPointTriggerExitSystem
-
-### Фильтр
-
--   `+` `OwnerComponent`
--   `+` `TargetComponent`
--   `+` `EventTriggerExitTagComponent`
--   `+` `FastTravelPointTriggerTagComponent`
--   `-` `DeleteOnEndFrameComponent`
-
-### Описание
-
-Выход из `FastTravelPointTrigger`.
-
--   проверить наличие `FastTravelPointTagComponent` у `TargetComponent` и `PlayerTagComponent` у `OwnerComponent`
--   скрывает ui списка точек перемещения
--   добавляет `DeleteOnEndFrameComponent`
-
 ## FastTravelPointActiveSystem
 
 ### Фильтр
@@ -145,13 +107,13 @@
 
 ### Описание
 
-Добавление `ActiveTagComponent` и включения `AlternativeVisualComponent` для тбп.
+Добавление `ActiveTagComponent` и переключения состояния `SwitchableObjectComponent` для тбп.
 
 -   проверить наличие `FastTravelPointTagComponent` у `TargetComponent`
 -   добавляет `DeleteOnEndFrameComponent`
--   если нет `ActiveTagComponent`, создаётся ивент для смены `VisualComponent` и добавляется `ActiveTagComponent`
+-   если нет `ActiveTagComponent`, создаётся ивент для смены состояния в `SwitchableObjectComponent` и добавляется `ActiveTagComponent`
 
-## PostProcessPressableObjectSystem
+## UseFastTravelPointSystem
 
 ### Фильтры
 
@@ -213,7 +175,7 @@
 -   проверить наличие `OneInteractionTagComponent` и `GameTooltipComponent` у `TargetComponent`
 -   включает `GameObject` из `GameTooltipComponent`
 
-## CreateEventChangeViewAfterInteractionSystem
+## PostProcessPressableObjectSystem
 
 ### Фильтр
 
@@ -225,9 +187,11 @@
 ### Описание
 
 Добавление события смены визуального представления у `TargetComponent`, после взаимодействия.
+Добавляет событие выбрасывания всех предметов у `TargetComponent`, после взаимодействия.
 
--   проверить наличие `NotAllowChangeViewTagComponent` у `TargetComponent`
--   создаётся ивент для смены `VisualComponent`
+-   проверить отсутствие `DisabledEntityTagPool` у `TargetComponent`
+-   создаётся ивент для смены состояния в `SwitchableObjectComponent` если он есть и нет `SwitchObjectDisabledTag`
+-   создаётся ивент для выбрасывания всех предметов из инвентаря, если у `TargetComponent` есть `InventoryTag`
 
 ## RemoveInteractivityWithOneInteractionSystem
 
