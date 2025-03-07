@@ -151,7 +151,7 @@
 -   добавляет `DeleteOnEndFrameComponent`
 -   если нет `ActiveTagComponent`, создаётся ивент для смены `VisualComponent` и добавляется `ActiveTagComponent`
 
-## UseFastTravelPointSystem
+## PostProcessPressableObjectSystem
 
 ### Фильтры
 
