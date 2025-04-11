@@ -15,9 +15,9 @@ private void DependencyInject()
 }
 ```
 
-Необходимые `namespace`: `VContainer;`, `JetBrains.Annotations;`
-
-Воспринимается как конструктор.
+**Воспринимается как конструктор**  
+Необходимые `namespace`: `VContainer;`, `JetBrains.Annotations;`  
+Если нужно внедрить что-то вложенным объектам, то передавать `IObjectResolver container`
 
 ## Класс C#
 
