@@ -6,7 +6,8 @@
 -   [UpdateTimerSystem](#UpdateTimerSystem)
 -   [UpdateFrameTimerSystem](#UpdateFrameTimerSystem)
 -   [ChangeSwitchableObjectSystem](#ChangeSwitchableObjectSystem)
--   [DeleteOnEndFrameSystem](#DeleteOnEndFrameSystem)
+-   [ChangeSwitchableObjectDisabledSystem](#ChangeSwitchableObjectDisabledSystem)
+-   [ChangeDisabledObjectSystem](#ChangeDisabledObjectSystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764605611778059&cot=10)
 
@@ -101,16 +102,40 @@
 Сменить `MainState` на противоположный
 Вызвать `SetActive` для каждого объекта из `SwitchableObjectComponent`
 
-## DeleteOnEndFrameSystem
+## ChangeSwitchableObjectDisabledSystem
 
 ### Фильтр
 
--   `+` `DeleteOnEndFrameComponent`
+-   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
+-   `+` `TargetComponent`
+-   `+` `SwitchObjectDisabledTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
 
 Удаляется в `DeleteOnEndFrameType.Frame`
 
 ### Описание
 
-Если `DeleteOnEndFrame` равен `DeleteOnEndFrameType.Frame` то  
-Если есть `SnapshotEntityPool` то сущность из этого компонента и удаляем из мира  
-Если есть `RootTransform` то удаляем объект с помощью `UnityEngine.Object.Destroy`, иначе с помощью `World.DelEntity`
+Если у сущности из `TargetComponent` нет `SwitchObject` или есть `DisabledEntityTag`, то выходим из системы
+Добавляется `DeleteOnEndFrameType.Frame`
+Добавляется `SwitchObjectDisabledTag` на сущность из `TargetComponent` если его нет и `EventMode` равен `EcsEventMode.Add`
+Удаляется `SwitchObjectDisabledTag` из сущности `TargetComponent` если в `SwitchableObjectComponent` `SwitchOnce` не `true` и `EventMode` равен `EcsEventMode.Remove`
+
+## ChangeDisabledObjectSystem
+
+### Фильтр
+
+-   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
+-   `+` `TargetComponent`
+-   `+` `DisabledEntityTagComponent`
+-   `-` `DeleteOnEndFrameComponent`
+
+Удаляется в `DeleteOnEndFrameType.Frame`
+
+### Описание
+
+Если сущност из `TargetComponent` мертва, то выходим из системы
+Добавляется `DeleteOnEndFrameType.Frame`
+Добавляется `DisabledEntityTag` на сущность из `TargetComponent` если его нет и `EventMode` равен `EcsEventMode.Add`
+Удаляется `DisabledEntityTag` из сущности `TargetComponent` если `EventMode` равен `EcsEventMode.Remove`
