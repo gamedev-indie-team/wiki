@@ -16,9 +16,10 @@
 
 #### Конечная обработка взаимодействия
 
--   [DisableGameTooltipWithOneInteractionSystem](#DisableGameTooltipWithOneInteractionSystem)
 -   [PostProcessPressableObjectSystem](#PostProcessPressableObjectSystem)
 -   [RemoveInteractivityWithOneInteractionSystem](#RemoveInteractivityWithOneInteractionSystem)
+
+-   [HideGameTooltipDisableEntitySystem](#HideGameTooltipDisableEntitySystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764590634744836&cot=14)
 
@@ -159,22 +160,6 @@
 -   берётся позиция из `RootTransformComponent` у `TargetComponent` устанавливается для `RootTransformComponent` у `OwnerComponent`
 -   создаётся ивент для изменения `LastFastTravelPointComponent` для `TargetComponent`
 
-## DisableGameTooltipWithOneInteractionSystem
-
-### Фильтр
-
--   `+` `EventPressInteractiveObjectTagComponent`
--   `+` `OwnerComponent`
--   `+` `TargetComponent`
--   `-` `DeleteOnEndFrameComponent`
-
-### Описание
-
-Выключение тултипа, у интерактивных объектов, которые используется только ОДИН раз.
-
--   проверить наличие `OneInteractionTagComponent` и `GameTooltipComponent` у `TargetComponent`
--   включает `GameObject` из `GameTooltipComponent`
-
 ## PostProcessPressableObjectSystem
 
 ### Фильтр
@@ -207,4 +192,18 @@
 Удаление интерактивности у предметов (после взаимодействия) с `OneInteractionTagComponent`.
 
 -   проверить наличие `OneInteractionTagComponent` и отсутствие `DeleteOnEndFrameComponent` у `TargetComponent`
--   добавляет `DeleteOnEndFrameComponent` к `TargetComponent`
+-   создаётся ивент на отключение сущности в `TargetComponent` и отключение его тултипа
+
+## HideGameTooltipDisableEntitySystem
+
+### Фильтр
+
+-   `+` `EventTagComponent`
+-   `+` `EventModeComponent`
+-   `+` `TargetComponent`
+-   `+` `DisabledEntityTagComponent`
+
+### Описание
+
+Если сущност из `TargetComponent` нет `GameTooltip`, то выходим из системы
+Скрывается тултип в `GameTooltip` на сущность из `TargetComponent` если `EventMode` равен `EcsEventMode.Add`
