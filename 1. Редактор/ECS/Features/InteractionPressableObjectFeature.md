@@ -19,7 +19,7 @@
 -   [PostProcessPressableObjectSystem](#PostProcessPressableObjectSystem)
 -   [RemoveInteractivityWithOneInteractionSystem](#RemoveInteractivityWithOneInteractionSystem)
 
--   [ChangeDisabledGameTooltipSystem](#ChangeDisabledGameTooltipSystem)
+-   [HideGameTooltipDisableEntitySystem](#HideGameTooltipDisableEntitySystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764590634744836&cot=14)
 
@@ -194,7 +194,7 @@
 -   проверить наличие `OneInteractionTagComponent` и отсутствие `DeleteOnEndFrameComponent` у `TargetComponent`
 -   создаётся ивент на отключение сущности в `TargetComponent` и отключение его тултипа
 
-## ChangeDisabledGameTooltipSystem
+## HideGameTooltipDisableEntitySystem
 
 ### Фильтр
 
