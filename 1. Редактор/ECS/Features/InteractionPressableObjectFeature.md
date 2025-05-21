@@ -201,12 +201,9 @@
 -   `+` `EventTagComponent`
 -   `+` `EventModeComponent`
 -   `+` `TargetComponent`
--   `+` `GameTooltipDisabledTagComponent`
+-   `+` `DisabledEntityTagComponent`
 
 ### Описание
 
-Если сущност из `TargetComponent` нет `GameTooltip` или есть `DisabledEntityTag`, то выходим из системы
-Добавляется `DeleteOnEndFrameType.Frame`
-Добавляется `GameTooltipDisabledTag` на сущность из `TargetComponent` если `EventMode` равен `EcsEventMode.Add`
-и скрывается тултип в `GameTooltip`
-Удаляется `GameTooltipDisabledTag` из сущности `TargetComponent` если `EventMode` равен `EcsEventMode.Remove`
+Если сущност из `TargetComponent` нет `GameTooltip`, то выходим из системы
+Скрывается тултип в `GameTooltip` на сущность из `TargetComponent` если `EventMode` равен `EcsEventMode.Add`

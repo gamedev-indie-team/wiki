@@ -6,7 +6,6 @@
 -   [UpdateTimerSystem](#UpdateTimerSystem)
 -   [UpdateFrameTimerSystem](#UpdateFrameTimerSystem)
 -   [ChangeSwitchableObjectSystem](#ChangeSwitchableObjectSystem)
--   [ChangeSwitchableObjectDisabledSystem](#ChangeSwitchableObjectDisabledSystem)
 -   [ChangeDisabledObjectSystem](#ChangeDisabledObjectSystem)
 
 [МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764605611778059&cot=10)
@@ -101,25 +100,6 @@
 Если у `event` есть `DisabledObjectTag` , то добавляем на сущность из `TargetComponent` компонент `DisabledObjectTag`  
 Сменить `MainState` на противоположный
 Вызвать `SetActive` для каждого объекта из `SwitchableObjectComponent`
-
-## ChangeSwitchableObjectDisabledSystem
-
-### Фильтр
-
--   `+` `EventTagComponent`
--   `+` `EventModeComponent`
--   `+` `TargetComponent`
--   `+` `SwitchObjectDisabledTagComponent`
--   `-` `DeleteOnEndFrameComponent`
-
-Удаляется в `DeleteOnEndFrameType.Frame`
-
-### Описание
-
-Если у сущности из `TargetComponent` нет `SwitchObject` или есть `DisabledEntityTag`, то выходим из системы
-Добавляется `DeleteOnEndFrameType.Frame`
-Добавляется `SwitchObjectDisabledTag` на сущность из `TargetComponent` если его нет и `EventMode` равен `EcsEventMode.Add`
-Удаляется `SwitchObjectDisabledTag` из сущности `TargetComponent` если в `SwitchableObjectComponent` `SwitchOnce` не `true` и `EventMode` равен `EcsEventMode.Remove`
 
 ## ChangeDisabledObjectSystem
 
