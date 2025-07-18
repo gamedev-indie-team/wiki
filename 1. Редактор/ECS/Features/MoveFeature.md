@@ -9,7 +9,7 @@
 
 ### Фильтр
 
--   `+` `EventChangeDirectionTagComponent`
+-   `+` `EventTagComponent`
 -   `+` `DirectionMoveComponent`
 -   `+` `TargetComponent`
 -   `-` `DeleteOnEndFrameComponent`

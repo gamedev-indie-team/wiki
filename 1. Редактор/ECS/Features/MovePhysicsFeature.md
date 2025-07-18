@@ -41,6 +41,20 @@
 
 Удаляет `GroundTag` к `Owner`
 
+## MoveTransformSystem
+
+### Фильтр
+
+-   `+` `DirectionMoveComponent`
+-   `+` `VelocityComponent`
+-   `+` `DirectionMoveComponent`
+-   `-` `RigidbodyComponent`
+
+### Описание
+
+Изменяется положение `Transform` на новую позицию с учетом скорости
+Удаляется `Direction` из сущности если значение равно `Vector2.zero`
+
 ## MoveRigidbodySystem
 
 ### Фильтр
@@ -54,7 +68,7 @@
 ### Описание
 
 Создаётся `event` на изменение скорости, которое вычисляется через `Vector3.Scale` скорости из сущности и направление из `Direction`
-Удаляется `Direction` из сущности
+Удаляется `Direction` из сущности если значение равно `Vector2.zero`
 
 ## MoveTransformSystem
 
