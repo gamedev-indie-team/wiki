@@ -59,6 +59,7 @@
 Если на `WayPoint` стоит флаг `UseInteraction` то добавляется `InteractingWithObjectTagComponent`
 Если на `WayPoint` стоит флаг `Jump` то добавляется `JumpedTagComponent`
 Изменяется `CurrentTargetPointComponent` на следующую `WayPoint`
+Устанавливает нулевой вектор движения
 
 ## MoveToTargetPointSystem
 
