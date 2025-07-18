@@ -5,7 +5,7 @@
 
 [ССЫЛКА В МИРО](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764607093380246&cot=10)
 
-## GroundTriggerEnterSystem
+## ChangeMoveDirectionSystem
 
 ### Фильтр
 
