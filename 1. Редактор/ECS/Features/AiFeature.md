@@ -6,6 +6,7 @@
 -   [MoveToTargetPointSystem](#MoveToTargetPointSystem)
 -   [AttackSystem](#AttackSystem)
 -   [BlockSystem](#BlockSystem)
+-   [UseAiAbilitySystem](#UseAiAbilitySystem)
 -   [DisableBlockSystem](#DisableBlockSystem)
 -   [DeleteBattleTagSystem](#DeleteBattleTagSystem)
 
@@ -115,6 +116,24 @@
 Создаёт событие по смене `AttackTagComponent` с флагом `Remove`
 Добавить `BlockTagComponent`
 Создаёт событие отключения блока
+
+## UseAiAbilitySystem
+
+### Фильтр
+
+-   `+` `FollowTagComponent`
+-   `+` `AbilityListComponent`
+-   `-` `DeleteOnEndFrameComponent`
+
+### Фильтр событий
+
+-   `+` `EventTagComponent`
+-   `+` `AbilityComponent`
+-   `+` `TimerComponent`
+
+### Описание
+
+Создаёт событие на выполнение способности если способности нет сущности отката
 
 ## DisableBlockSystem
 
