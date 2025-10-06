@@ -47,10 +47,15 @@
 ### Описание
 
 Если `Timer` != 0, то выполняется уменьшение `Timer`  
+Если `Timer` == 0, то вызывается событие тика таймера для подписчиков `TimerService`
+
 Иначе ЕСЛИ есть `IterationCount`, то
 
 -   `Timer` становится равным `PeriodTimer`,
 -   выполняется уменьшение `Timer`,
 -   `IterationCount` уменьшается на 1
 
-Если `IterationCount` == 0 и нет `NotDeleteByUpdateTimerTagPool` добавляется `DeleteOnEndFrameType.Frame`
+Если `IterationCount` == 0
+
+-   и нет `NotDeleteByUpdateTimerTagPool` добавляется `DeleteOnEndFrameType.Frame`
+-   вызывается событие окончания таймера для подписчиков `TimerService`
