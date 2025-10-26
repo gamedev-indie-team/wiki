@@ -16,11 +16,11 @@
 
 ## Code cleanup (форматирование и исправление)
 
+> [список правил `Code cleanup` от Microsoft](https://learn.microsoft.com/en-us/visualstudio/ide/code-styles-and-code-cleanup?view=vs-2022#code-cleanup-settings)
+
 ?>
 **en**: Tools > Options > Text Editor > Code Cleanup  
 **ru**: Средства > Параметры > Текстовый редактор > Очистка кода
-
-> [список правил `Code cleanup` от Microsoft](https://learn.microsoft.com/en-us/visualstudio/ide/code-styles-and-code-cleanup?view=vs-2022#code-cleanup-settings)
 
 -   включить пункт `Запустить профиль "Очистка кода" при сохранении` | `Run Code Cleanup profile on save`
 
@@ -71,12 +71,35 @@
 -   выбрать папку `TemplateItem` в `/путь к репозиторию кода game/` + `/.ide/TemplateItem`
 -   перезагрузить `visual studio`
 
-    ![результат настройки](../_images/item-template-result.jpg)
+![результат настройки](../_images/item-template-result.jpg)
 
 ## Code Snippets (шаблоны для кода)
 
-2.  [настроить Item Template (шаблоны для файлов)][4]
-3.  [настроить Code Snippets (шаблоны для кода)][5]
+> [Пошаговое руководство. Создание фрагмента кода в Visual Studio](https://learn.microsoft.com/ru-ru/visualstudio/ide/walkthrough-creating-a-code-snippet?view=vs-2022)
+
+?>
+**en**: Tools > Code Snippets Manager  
+**ru**: Средства > Диспетчер фрагментов кода
+
+-   пункт `Import`
+-   выбрать **ВСЕ ЭЛЕМЕНТЫ** в `/путь к репозиторию кода game/` + `/.ide/Code Snippets`
+-   если уже есть такие файлы, перезаписать (делать каждый раз при обновлении сниппетов)
+
+?> Дополнительно можно сделать постоянное обновление `Code Snippets` если в настройках указать папку со `Code Snippets`
+
+![результат настройки](../_images/permanent-update-snippets.png)
+
+### Виды
+
+-   `descEcsEventFactory`: описание фабрики событий модуля
+-   `descEcsFactory`: описание фабрики модуля
+-   `descEcsHelper`: описание помощника модуля
+-   `descException`: описание `Exception` для объекта языка
+
+![результат настройки](../_images/code-snippets-result.png)
+
+## 444
+
 4.  добавить `.editorconfig` к решению
 
     ![image][6]
@@ -114,8 +137,6 @@
 
 ![image][10]
 
-[4]: ./1.%20Item%20Template.md
-[5]: ./2.%20Code%20Snippets.md
 [6]: ../../Resources/first-start-sln-add-editorconfig.png
 [7]: ../../Resources/visual-studio-restore-nuget.png
 [8]: ../../Resources/first-start-toggle-spell-checker.jpg
