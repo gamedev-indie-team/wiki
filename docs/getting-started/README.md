@@ -63,6 +63,16 @@
 
 ## Item Template (шаблоны для файлов)
 
+?>
+**en**: Tools > Options > Projects and Solutions > Locations  
+**ru**: Средства > Параметры > Проекты и решения > Расположения
+
+-   пункт `User item template location` | `Расположение шаблонов элементов пользователя`
+-   выбрать папку `TemplateItem` в `/путь к репозиторию кода game/` + `/.ide/TemplateItem`
+-   перезагрузить `visual studio`
+
+    ![результат настройки](../_images/item-template-result.jpg)
+
 ## Code Snippets (шаблоны для кода)
 
 2.  [настроить Item Template (шаблоны для файлов)][4]
