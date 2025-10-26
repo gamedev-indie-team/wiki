@@ -98,50 +98,40 @@
 
 ![результат настройки](../_images/code-snippets-result.png)
 
-## 444
+## Проверка орфографии
 
-4.  добавить `.editorconfig` к решению
+?>
+**en**: Edit > Advanced > Toggle Spell Checker  
+**ru**: Правка > Дополнительно > Переключить проверку орфографии
 
-    ![image][6]
+![пример](../_images/visual-studio-toggle-spell-checker.jpg)
 
-5.  установка зависимостей. Этот пункт можно сделать 2 путями:
+## Добавить `.editorconfig`
 
-    1. восстановление `NuGet`-пакетов
+![пример](../_images/visual-studio-sln-add-editorconfig.png)
 
-        ![image][7]
+## Установка зависимостей
 
-    2. запустить `build` решения (`ctrl + shift + b`), создаться папка obj в корне, можно удалить
+Этот пункт можно сделать 2 путями:
 
-        ```PowerShell
-        dotnet build .\game.sln
-        ```
+-   восстановление `NuGet`-пакетов  
+    ![пример](../_images/visual-studio-restore-nuget.png)
 
-6.  включение проверки орфографии
-
-    > Edit > Advanced > Toggle Spell Checker
-
-    ![image][8]
+-   запустить `build` решения (`ctrl + shift + b`), создаться папка obj в корне, можно удалить
+    ```powershell
+    dotnet build .\game.sln
+    ```
 
 ## Опционально
 
-### Анализ кода
+**Анализ кода**. Можно запускать как для всего решения, так и для проекта, удобно смотреть пропущенные `warning`
 
-Можно запускать как для всего решения, так и для проекта, удобно смотреть пропущенные `warning`
+![image](../_images/first-start-analysis.png)
 
-![image][9]
+**Обозреватель решения**. Отслеживать активный элемент  
+`Tools` > `Options` > `Project and Solutions` > `General` установить `Track Active Item in Solution Explorer`
 
-### Обозреватель решения
-
-> Отслеживать активный элемент
-> `Tools` > `Options` > `Project and Solutions` > `General` установить `Track Active Item in Solution Explorer`
-
-![image][10]
-
-[6]: ../../Resources/first-start-sln-add-editorconfig.png
-[7]: ../../Resources/visual-studio-restore-nuget.png
-[8]: ../../Resources/first-start-toggle-spell-checker.jpg
-[9]: ../../Resources/first-start-analysis.png
-[10]: ../../Resources/track-active-item-explorer-solution.jpg
+![image](../_images/track-active-item-explorer-solution.jpg)
 
 ## Возможные проблемы
 
