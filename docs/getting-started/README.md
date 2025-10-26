@@ -1,4 +1,4 @@
-# Подключение IDE к Unity
+## Подключение IDE к Unity
 
 ?>
 В `Preferences` > `External Tools` выбрать `visual studio`  
@@ -106,7 +106,7 @@
 
 ![пример](../_images/visual-studio-toggle-spell-checker.jpg)
 
-## Добавить `.editorconfig`
+## Добавление `.editorconfig`
 
 ![пример](../_images/visual-studio-sln-add-editorconfig.png)
 
