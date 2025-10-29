@@ -11,6 +11,6 @@
     -   `TimerTickTag` — значение таймера на текущей итерации равно 0
     -   `TimerExpiredTag` — конец таймера
 
-## ССылки
+## Ссылки
 
 -   [miro - описание TimerFeature](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764636194593507&cot=14)
