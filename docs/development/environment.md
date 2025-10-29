@@ -1,6 +1,6 @@
-## Сортировка зависимостей в `.asmdef`
+## Сортировка зависимостей в `.asmdef` {docsify-ignore-all}
 
-> !!! ссылки которые не указаны в `references.json` будут удалены из `.asmdef` !!!
+!> Ссылки которые не указаны в `references.json` будут удалены из `.asmdef`
 
 Расположение: `репозиторий\.scripts`
 
@@ -21,7 +21,7 @@
     - добавить `Scope` пакета
     - открыть `Window/Package Manager/My Registers`
     - выбрать нужный пакет - `install`
-2. git URL, из репозитория пакета
+2. `git URL`, из репозитория пакета
     - открыть `Window/Package Manager`,
     - нажать `+` - `Add package from git URL` - вставить url
 3. [asset store unity](https://assetstore.unity.com/) / прямым ассетом.
