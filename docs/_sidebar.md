@@ -10,3 +10,4 @@
 
 - Геймплей    
     -   [Способности](/gameplay/ability.md)
+    -   [ИИ](/gameplay/ai.md)
