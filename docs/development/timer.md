@@ -1,4 +1,4 @@
-## Таймер {docsify-ignore-all}
+# Таймер {docsify-ignore-all}
 
 ?> Механизм таймеров основан на `ECS`
 
