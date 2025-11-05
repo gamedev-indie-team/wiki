@@ -11,3 +11,6 @@
 -   Геймплей
     -   [Способности](/gameplay/ability.md)
     -   [ИИ](/gameplay/ai.md)
+
+- Настройки    
+    -   [ИИ](/settings/ai.md)
