@@ -1,8 +1,9 @@
 -   [Подготовка](/getting-started/)
 
 -   Разработка
-
     -   [Окружение](/development/environment.md)
+    -   [Код](/development/code.md)
     -   [Импорт и настройки ассетов](/development/import-and-configuring-assets.md)
-    -   [Механизм внедрения](/development/code.md)
     -   [Таймер](/development/timer.md)
+    -   [Способности](/development/ability.md)
+    -   [ИИ](/development/ai.md)

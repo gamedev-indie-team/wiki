@@ -1,4 +1,4 @@
-## Texture
+## Texture {docsify-ignore}
 
 -   использовать пресет `TextureImporterSpriteMultiple`
 -   стороны `texture` должны быть **кратны 2, т.е. 2<sup>n</sup>** (для оптимизации сжатия)
@@ -26,6 +26,6 @@
 
 -   `Color` меняет у всех тайлов этого типа цвет
 
-# Интересное
+## Интересное
 
 -   с помощью 1 GO с [Sprite Renderer](https://docs.unity3d.com/6000.0/Documentation/Manual/sprite/renderer/sprite-renderer-reference.html), в режиме `Draw Mode.Tiled`, можно покрыть сеткой большую площадь (в настройках импорта спрайта поставить `Mesh Type.Full Rect`)
