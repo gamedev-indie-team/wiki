@@ -1,4 +1,4 @@
-## Подключение IDE к Unity
+## Подключение IDE к Unity {docsify-ignore}
 
 ?>
 В `Preferences` > `External Tools` выбрать `visual studio`  

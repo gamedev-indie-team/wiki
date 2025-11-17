@@ -1,4 +1,4 @@
-# Dependency injection
+## Dependency injection
 
 При добавлении компонента `InjectServices` на `GameObject`, механизм `DI` попытается произвести инъекцию при запуске сцены.  
 Если нужно внедрить что-то вложенным объектам, то передавать `IObjectResolver container`.
