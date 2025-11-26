@@ -7,3 +7,4 @@
     -   [Таймер](/development/timer.md)
     -   [Способности](/development/ability.md)
     -   [ИИ](/development/ai.md)
+    -   [Бой](/development/battle.md)
