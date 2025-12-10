@@ -8,3 +8,4 @@
     -   [Способности](/development/ability.md)
     -   [ИИ](/development/ai.md)
     -   [Бой](/development/battle.md)
+    -   [Внешние ивенты](/development/event-outer-service.md)
