@@ -15,3 +15,7 @@
 - `HealthBar`
 - `BossGameplayTrigger`
 - `FastTravelPoint`
+
+## Ссылки
+
+-   [miro - описание BaseFeature](https://miro.com/app/board/uXjVPrjYGFk=/?moveToWidget=3458764605611077675&cot=14)
