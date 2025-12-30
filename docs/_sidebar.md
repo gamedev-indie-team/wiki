@@ -10,3 +10,4 @@
     -   [Бой](/development/battle.md)
     -   [Внешние события](/development/event-outer-service.md)
     -   [Взаимодействие с интерактивными предметами](/development/interactive-press-object.md)
+    -   [Модикаторы](/development/modifiers.md)
