@@ -1,0 +1,4 @@
+- [Подключение IDE к Unity](ide/0_connecting_to_unity.md)
+- [Форматирование и исправление](ide/1_code_cleanup.md)
+- [Дополнительные настройки](ide/2_additionally.md)
+- [Шаблоны кода](ide/3_template-snippets.md)

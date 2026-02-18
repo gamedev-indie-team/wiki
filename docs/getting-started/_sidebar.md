@@ -1,4 +1,0 @@
-- [Подключение IDE к Unity](getting-started/0_connecting_to_unity.md)
-- [Форматирование и исправление](getting-started/1_code_cleanup.md)
-- [Дополнительные настройки](getting-started/2_additionally.md)
-- [Шаблоны кода](getting-started/3_template-snippets.md)

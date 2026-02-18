@@ -1,5 +1,5 @@
 - Окружение
-    - [Visual studio](/getting-started/)
+    - [Visual studio](/ide/)
 
 - Разработка
     - [Окружение](/development/environment.md)

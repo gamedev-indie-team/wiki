@@ -6,10 +6,10 @@
 
 - включить пункт `Запустить профиль "Очистка кода" при сохранении` | `Run Code Cleanup profile on save`
 
-![image](../_images/code-cleanup-on-save-ru.png)
-![image](../_images/code-cleanup-on-save-en.png)
+![image](_images/code-cleanup-on-save-ru.png)
+![image](_images/code-cleanup-on-save-en.png)
 
 - в настройках очистки кода добавить **ВСЕ ПРАВИЛА**, кроме:
 
-![image](../_images/code-cleanup-rules-ru.png)
-![image](../_images/code-cleanup-rules-en.png)
+![image](_images/code-cleanup-rules-ru.png)
+![image](_images/code-cleanup-rules-en.png)

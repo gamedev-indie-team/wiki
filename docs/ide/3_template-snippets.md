@@ -8,7 +8,7 @@
 - выбрать папку `TemplateItem` в `/путь к репозиторию кода game/` + `/.ide/TemplateItem`
 - перезагрузить `visual studio`
 
-![результат настройки](../_images/item-template-result.jpg)
+![результат настройки](_images/item-template-result.jpg)
 
 ### Code Snippets (шаблоны для кода)
 
@@ -24,7 +24,7 @@
 
 ?> Дополнительно можно сделать постоянное обновление `Code Snippets` если в настройках указать папку со `Code Snippets`
 
-![результат настройки](../_images/permanent-update-snippets.png)
+![результат настройки](_images/permanent-update-snippets.png)
 
 ### Виды
 
@@ -33,4 +33,4 @@
 - `descEcsHelper`: описание помощника модуля
 - `descException`: описание `Exception` для объекта языка
 
-![результат настройки](../_images/code-snippets-result.png)
+![результат настройки](_images/code-snippets-result.png)

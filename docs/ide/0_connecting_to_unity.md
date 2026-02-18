@@ -8,8 +8,8 @@
 В `Preferences` > `External Tools` выбрать `visual studio`  
 Нажать кнопку `Regenerate projects files`
 
-![image](../_images/start-unity-external-tools.jpg)
+![image](_images/start-unity-external-tools.jpg)
 
 ?> Запуск `.sln` через выбранный редактор (приоритетный запуск, т.к. голый запуск может терять контент или `NuGet`)
 
-![image](../_images/start-unity-open-sln.jpg)
+![image](_images/start-unity-open-sln.jpg)
