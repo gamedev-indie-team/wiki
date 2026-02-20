@@ -5,10 +5,10 @@
 **ru**: Средства > Параметры > Проекты и решения > Расположения
 
 - пункт `User item template location` | `Расположение шаблонов элементов пользователя`
-- выбрать папку `TemplateItem` в `/путь к репозиторию кода game/` + `/.ide/TemplateItem`
+- выбрать папку `item-template` в `docs/visual-studio/_code`
 - перезагрузить `visual studio`
 
-![результат настройки](_images/item-template-result.jpg)
+![image](_images/item-template-result.jpg)
 
 ### Code Snippets (шаблоны для кода)
 
@@ -24,7 +24,7 @@
 
 ?> Дополнительно можно сделать постоянное обновление `Code Snippets` если в настройках указать папку со `Code Snippets`
 
-![результат настройки](_images/permanent-update-snippets.png)
+![image](_images/permanent-update-snippets.png)
 
 ### Виды
 
@@ -33,4 +33,4 @@
 - `descEcsHelper`: описание помощника модуля
 - `descException`: описание `Exception` для объекта языка
 
-![результат настройки](_images/code-snippets-result.png)
+![image](_images/code-snippets-result.png)

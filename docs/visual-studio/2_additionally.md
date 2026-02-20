@@ -16,7 +16,7 @@
 **en**: Edit > Advanced > Toggle Spell Checker  
 **ru**: Правка > Дополнительно > Переключить проверку орфографии
 
-![пример](_images/visual-studio-toggle-spell-checker.jpg)
+![image](_images/visual-studio-toggle-spell-checker.jpg)
 
 ### Отслеживать активный элемент
 
@@ -28,7 +28,7 @@
 
 **В VS2026+ уже не обязательно**
 
-![пример](_images/visual-studio-sln-add-editorconfig.png)
+![image](_images/visual-studio-sln-add-editorconfig.png)
 
 ### Установка зависимостей
 
@@ -36,7 +36,7 @@
 
 - восстановление `NuGet`-пакетов
 
-    ![пример](_images/visual-studio-restore-nuget.png)
+    ![image](_images/visual-studio-restore-nuget.png)
 
 - запустить `build` решения (`ctrl + shift + b`), создаться папка obj в корне, можно удалить
     ```powershell
