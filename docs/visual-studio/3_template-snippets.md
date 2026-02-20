@@ -5,7 +5,7 @@
 **ru**: Средства > Параметры > Проекты и решения > Расположения
 
 - пункт `User item template location` | `Расположение шаблонов элементов пользователя`
-- выбрать папку `item-template` в `docs/visual-studio/_code`
+- выбрать `docs/visual-studio/_code/item-template`
 - перезагрузить `visual studio`
 
 ![image](_images/item-template-result.jpg)
@@ -19,18 +19,11 @@
 **ru**: Средства > Диспетчер фрагментов кода
 
 - пункт `Import`
-- выбрать **ВСЕ ЭЛЕМЕНТЫ** в `/путь к репозиторию кода game/` + `/.ide/Code Snippets`
+- выбрать **ВСЕ ЭЛЕМЕНТЫ** в `docs/visual-studio/_code/code-snippets`
 - если уже есть такие файлы, перезаписать (делать каждый раз при обновлении сниппетов)
 
 ?> Дополнительно можно сделать постоянное обновление `Code Snippets` если в настройках указать папку со `Code Snippets`
 
 ![image](_images/permanent-update-snippets.png)
-
-### Виды
-
-- `descEcsEventFactory`: описание фабрики событий модуля
-- `descEcsFactory`: описание фабрики модуля
-- `descEcsHelper`: описание помощника модуля
-- `descException`: описание `Exception` для объекта языка
 
 ![image](_images/code-snippets-result.png)
