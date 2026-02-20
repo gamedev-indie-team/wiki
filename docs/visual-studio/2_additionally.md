@@ -6,10 +6,6 @@
 
 ![image](_images/code-cleanup-visual-studio-parameters-example.png)
 
-### Сортировка ошибок по кодам: вкладка "список ошибок" > правый клик > группирование > код
-
-![image](_images/code-cleanup-visual-studio-sort-list-errors.png)
-
 ### Проверка орфографии
 
 ?>
@@ -23,6 +19,22 @@
 ?> Tools > Options > Project and Solutions > General установить Track Active Item in Solution Explorer
 
 ![image](_images/track-active-item-explorer-solution.jpg)
+
+### Кодировка файлов как UTF-8
+
+?> Все параметры > Среда > Документы
+
+![image](_images/file-utf-8.png)
+
+### Анализ кода
+
+Можно запускать как для всего решения, так и для проекта, удобно смотреть пропущенные `warning`
+
+![image](_images/first-start-analysis.png)
+
+### Сортировка ошибок по кодам: вкладка "список ошибок" > правый клик > группирование > код
+
+![image](_images/code-cleanup-visual-studio-sort-list-errors.png)
 
 ### Добавление `.editorconfig`
 
@@ -42,9 +54,3 @@
     ```powershell
     dotnet build .\game.sln
     ```
-
-### Анализ кода
-
-Можно запускать как для всего решения, так и для проекта, удобно смотреть пропущенные `warning`
-
-![image](_images/first-start-analysis.png)
