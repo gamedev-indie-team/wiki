@@ -1,9 +1,8 @@
 - Окружение
-    - [Visual studio](/visual-studio/)
+    - [Visual studio](visual-studio/)
+    - [Unity](unity/)
 
 - Разработка
-    - [Окружение](/development/environment.md)
-    - [Код](/development/code.md)
     - [Импорт и настройки ассетов](/development/import-and-configuring-assets.md)
     - [Таймер](/development/timer.md)
     - [Способности](/development/ability.md)
