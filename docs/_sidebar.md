@@ -1,13 +1,4 @@
 - Окружение
     - [Visual studio](visual-studio/)
     - [Unity](unity/)
-
-- Разработка
-    - [Импорт и настройки ассетов](/development/import-and-configuring-assets.md)
-    - [Таймер](/development/timer.md)
-    - [Способности](/development/ability.md)
-    - [ИИ](/development/ai.md)
-    - [Бой](/development/battle.md)
-    - [Внешние события](/development/event-outer-service.md)
-    - [Взаимодействие с интерактивными предметами](/development/interactive-press-object.md)
-    - [Модикаторы](/development/modifiers.md)
+        - [Import assets](unity/0_import-and-configuring-assets.md)
