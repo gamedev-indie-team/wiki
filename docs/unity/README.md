@@ -63,3 +63,31 @@ NaughtyAttributes.Required("Required PropName")
 [field: SerializeReference, SubclassSelector]
 public Type[] Components { get; private set; } = Array.Empty<Type>();
 ```
+
+## Тестирование
+
+Используется [NUnit](https://nunit.org/) и его [Constraint Model](https://docs.nunit.org/articles/nunit/writing-tests/assertions/assertion-models/constraint.html)
+
+### Виды
+
+- **EditMode тесты (Unit-тесты)**: проверяют логику кода (функции, классы) без запуска игры, работая быстрее. Используются для проверки математических расчетов (или логики инвентаря)
+    - путь размещения: **[_сборка_фичи_]\Editor\Tests.EditMode**
+    - имя проекта/файла `.asmdef`: **[_сборка_фичи_].Tests.EditMode** (в имени **игнорируется папка Editor**)
+- **PlayMode тесты (Интеграционные/Системные)**: запускают игру, проверяя поведение игровых объектов (`GameObject`), физику, сцены, корутины и UI-взаимодействия
+    - путь размещения: **[_сборка_фичи_]\Tests.PlayMode**
+    - имя проекта: **[_сборка_фичи_].Tests.PlayMode** (файл аналогично)
+- атрибут `[UnityTest]`: предназначен для **EditMode тестов** и **PlayMode тестов**. Он указывает Unity на то, что тест следует запускать как корутину
+- у тестов **не должно быть `namespace`** (для удобства просмотра в `Test runner`)
+
+### `.editorconfig` для сборок тестов и правила
+
+Т.к. не удается ограничить правила для пути сборок в корневом `.editorconfig`, то нужно создать локальный файл для сборки на уровне `.asmdef`
+
+```csharp
+# отключает правило локально
+
+root = false
+
+[*.cs]
+dotnet_diagnostic.SA1600.severity = none
+```
