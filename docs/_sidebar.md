@@ -1,4 +1,3 @@
 - Окружение
     - [Visual studio](visual-studio/)
     - [Unity](unity/)
-        - [Import assets](unity/0_import-and-configuring-assets.md)
