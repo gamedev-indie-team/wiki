@@ -1,15 +1,15 @@
-Легковесный компонентно-ориентированный ооп фреймворк. Имеет поддержку редактора **Unity3d**
+?> легковесный компонентно-ориентированный ооп фреймворк. Имеет поддержку редактора **Unity3d**
 
 ## Мир
 
-Представлен в виде `SceneEntityWorld<TEntity>` и `IEntityWorld<TEntity>`.  
-Управляет ЖЦ сущностей. Есть реализация по умолчанию для `SceneEntity` в виде `SceneEntityWorld`.
+Представлен в виде `SceneEntityWorld<TEntity>` расширяющий `IEntityWorld<TEntity>`  
+Управляет ЖЦ сущностей. Есть реализация по умолчанию для `SceneEntity` в виде `SceneEntityWorld`
 
 Свойства:
 
 - `IsInitialized`
 - `IsEnabled`
-- `IEntityWorld<TEntity>.Entities`
+- `Entities`
 
 Методы этапов ЖЦ:
 
@@ -40,7 +40,8 @@
 
 ## Сущность
 
-Реализация набора компонентов и свойств. Всегда расширяет `IEntity`.
+Реализация набора компонентов и свойств. Всегда расширяет `IEntity`  
+Для новых типов сущностей максимально **только 1 уровень наследования** от `IEntity` и `SceneEntity`
 
 Реализация по умолчанию:
 
@@ -54,8 +55,7 @@
 - `IsEnabled`
 - `IsDestroyOnDispose`: уничтожить `GameObject` при вызове `Dispose`
 - `Transform`
-- `IEntity.Components`
-- `RawComponents`: для добавления через редактор
+- `Components`
 
 Методы этапов ЖЦ:
 
@@ -95,16 +95,17 @@
 
 ### Компонент сущности
 
-Единица реализации логики и обработки данных. Можно добавлять через редактор или код (нужно реализовать конструктор). Готовые компоненты: `GameObjectActivationBehavior`
+Единица реализации логики и обработки данных. Можно добавлять через редактор или код (нужно реализовать конструктор)  
+Готовые компоненты: `GameObjectActivationBehavior`
 
 Название зависит от выполняемой задачи + окончания:
 
-- `[Name]Component`: только состояние или состояние и обработка логики
+- `[Имя]Component`: только состояние или состояние и обработка логики
 - `[Что-делает]Behavior`: только обработка логики
 
 Должен расширять:
 
-- обязательно `IEntityComponent`
+- обязательно `IEntityComponent` и аттрибут `[Serializable]`
 - опционально: `IEntityInitializable`, `IEntityEnable`, `IEntityDisable`, `IEntityTickable`, `IEntityFixedTickable`, `IEntityLateTickable`, `IDisposable`
 
 Собственная реализация:
@@ -120,7 +121,7 @@
 
 ## Пул объектов
 
-Сервис для управления и инициализации пулов объектов для префабов `GameObject`
+Сервис для управления и инициализации пулов объектов из префабов
 
 Основные особенности:
 
@@ -140,7 +141,7 @@
 - `Get<T>`: возврат нового объекта или его компонента (`T`) по **prefab**.
 - `Release`
 
-Собственная реализация:
+Собственная реализация поведения пула:
 
 ```csharp
     /// <inheritdoc cref="IPoolBehavior"/>
@@ -154,3 +155,26 @@
         }
     }
 ```
+
+## Дополнительные части
+
+- реактивные поля и свойства: интерфейсы `IReadOnlyReactiveVariable<T>`, `IReactiveVariable<T>`
+    - можно подписываться на изменения через событие или метод-расширение `Subscribe` (для удобной отписки)
+    - реализация `ReactiveVariable<T>`
+- триггеры: `TriggerEvents` и `TriggerEvents2D`
+    - события на вход (`OnEnter`, `OnEnter2D`) и выход (`OnExit`, `OnExit2D`), необходим коллайдер
+    - `ignoreLayers`: выбор какие слои (unity3D) игнорировать
+- прокси: `ProxyEntity<TEntity>` расширяющий `IProxyEntity<TEntity>`
+    - нужно добавить оригинальную `IEntity`, которая может находится в другой части `GameObject`
+    - реализация `ProxySceneEntity`
+- подписка: структура `Subscription`
+    - позволяет подписаться и **отписку передать**, как объект, в другое место
+
+### Расширения
+
+- `EventExtensions`
+    - `Subscribe` для `IReadOnlyReactiveVariable<T>`: подписка на изменение значения реактивной переменной
+- `ColliderExtension`
+    - `TryGetEntity<TEntity>` для `Collider` и `Collider2D`: поиск на `GameObject` компонента `IEntity` или `IProxyEntity<TEntity>`
+- `LayerMaskExtension`
+    - `LayerMask.Contains`: проверяет содержит ли маска указанный слой
