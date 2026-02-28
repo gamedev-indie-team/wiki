@@ -1,0 +1,4 @@
+- [Подключение IDE к Unity](visual-studio/0_connecting_to_unity.md)
+- [Форматирование и исправление](visual-studio/1_code_cleanup.md)
+- [Дополнительные настройки](visual-studio/2_additionally.md)
+- [Шаблоны кода](visual-studio/3_template-snippets.md)

@@ -1,13 +1,4 @@
--   [Подготовка](/getting-started/)
-
--   Разработка
-    -   [Окружение](/development/environment.md)
-    -   [Код](/development/code.md)
-    -   [Импорт и настройки ассетов](/development/import-and-configuring-assets.md)
-    -   [Таймер](/development/timer.md)
-    -   [Способности](/development/ability.md)
-    -   [ИИ](/development/ai.md)
-    -   [Бой](/development/battle.md)
-    -   [Внешние события](/development/event-outer-service.md)
-    -   [Взаимодействие с интерактивными предметами](/development/interactive-press-object.md)
-    -   [Модикаторы](/development/modifiers.md)
+- Окружение
+    - [Visual studio](visual-studio/)
+    - [Unity](unity/)
+- [OOP Framework](oop-framework/)
